@@ -56,9 +56,12 @@ main {
 .info-div {
     width: 100%;
     max-width: 400px;
+    /* margin-left: 9%; */
     margin-top: 2%;
     padding: 1rem;
     height: 60%;
+    border: 1px solid grey;
+    border-radius: 3%;
 }
 
 
@@ -73,20 +76,25 @@ main {
     }
 
     .info-div {
-        max-width: 100%;
+        max-width: 110%;
         margin-top: 3%;
     }
 
-
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+    }
 
     .date,
     .time,
     .location,
     .hostname {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
         color: #202226;
         font-weight: 500;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -126,16 +134,25 @@ main {
 
     .image-div {
         margin-top: 0.2%;
-        max-width: 80%;
-        margin-bottom: 2%;
+        max-width: 70%;
+        margin-bottom: 3%;
     }
 
     .info-div {
-        max-width: 35%;
-        margin-top: 6%;
+        max-width: 70%;
+        margin-top: 3%;
         /* Adjust the margin-top for the desired spacing */
-        margin-bottom: 19%;
+        margin-bottom: 8%;
         max-height: 40%;
+        border: 0px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 29px;
     }
 
 
@@ -164,13 +181,7 @@ main {
         margin-left: 1.3%;
     }
 
-    /* .title {
-        font-size: 21px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 29px;
-    } */
+
 }
 
 
@@ -217,7 +228,7 @@ main {
     -ms-letter-spacing: normal;
     letter-spacing: normal;
     color: #0D0F13;
-    padding-right: 12px;
+    /* padding-right: 12px; */
     word-break: break-word;
     margin-left: 1%;
 }
@@ -273,7 +284,7 @@ main {
 }
 
 .timetime {
-    margin-top: 2%;
+    margin-top: 1.2%;
     margin-left: 2%;
     width: 50%;
     height: 30%;

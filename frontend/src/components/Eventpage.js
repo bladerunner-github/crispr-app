@@ -31,13 +31,15 @@ class Eventpage extends Component {
                             Title : {title}
                         </div>
                         <div className='date'>
-                            <div className='dateimage'><img src=" https://thumbs.dreamstime.com/z/calendar-date-sign-icon-logo-holiday-important-day-concept-time-vector-illustration-196095350.jpg" alt="" /></div>
-                            <div className='datedate'>  Date : {date}</div>
+                            <div className='dateimage'>  <img src=" https://thumbs.dreamstime.com/z/calendar-date-sign-icon-logo-holiday-important-day-concept-time-vector-illustration-196095350.jpg" alt="" />
+
+                            </div>
+                            <div className='datedate'>  {date}</div>
 
                         </div>
                         <div className='time'>
                             <div className='timeimage'><img src="https://img.favpng.com/17/19/8/portable-network-graphics-symbol-time-logo-png-favpng-Q3AeMC4KUu3qnH2AkUNuhgKcQ.jpg " alt="" /></div>
-                            <div className='timetime'>Time : {time}</div>
+                            <div className='timetime'> {time}</div>
 
                         </div>
                         <div className='location'>
@@ -50,7 +52,7 @@ class Eventpage extends Component {
                         </div>
                         <div className='hostname'>
                             <div className='hostnameimage'><img src="https://w7.pngwing.com/pngs/713/762/png-transparent-computer-icons-button-login-image-file-formats-logo-monochrome.png" alt="" /></div>
-                            <div className='hosthost'>Hostname : {hostname}</div>
+                            <div className='hosthost'>Hostname- {hostname}</div>
 
                         </div>
 
