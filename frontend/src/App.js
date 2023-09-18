@@ -13,6 +13,8 @@ import LoginForm from "./components/login"; // Import your LoginForm component
 import EventForm from "./EventForm";
 import EventPage from "./EventPage";
 import Approval from "./Approval";
+import Blog from "./components/Blog";
+import Banner from "./components/Banner";
 
 function App() {
   // State to track the user's authentication status
@@ -53,6 +55,17 @@ function App() {
           />
         </Routes>
       </Router>
+
+      <Banner />
+
+      <div className="all-blogs">
+        <Blog />
+        <Blog />
+        <Blog />
+      </div>  
+
+      
+        
       <Footer />
     </div>
   );
