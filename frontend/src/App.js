@@ -15,6 +15,8 @@ import EventPage from "./EventPage";
 import Approval from "./Approval";
 import Blog from "./components/Blog";
 import Banner from "./components/Banner";
+import ImageSlider from './components/ImageSlider';
+import SliderData  from './components/SliderData';
 
 function App() {
   // State to track the user's authentication status
@@ -42,8 +44,8 @@ function App() {
           <NavbarLoggedOut />
         )}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<HomeUser />} />
+          {/* <Route path="/" element={<Home />} /> */}
+          {/* <Route path="/home" element={<HomeUser />} /> */}
           <Route path="/menu" element={<EventPage/>} />
           <Route path="/Form" element={<EventForm/>} />
           <Route path="/Approval" element={<Approval/>} />
@@ -56,16 +58,13 @@ function App() {
         </Routes>
       </Router>
 
+      <ImageSlider slides={SliderData} />    
       <Banner />
-
       <div className="all-blogs">
         <Blog />
         <Blog />
         <Blog />
       </div>  
-
-      
-        
       <Footer />
     </div>
   );
