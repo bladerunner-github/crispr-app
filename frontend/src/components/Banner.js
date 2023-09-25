@@ -5,7 +5,7 @@ import '../styles/Banner.css'
 const Banner = () => 
 {
     return (
-        <a href="http://192.168.77.84/" target="_blank" className='banner'>
+        <a href="http://192.168.77.84/" target="_blank" className='banner-to-crispr'>
             <Typography  gutterBottom className='link'>
                 <h1>Visit our Server</h1>
                 <img src= {CrisperLogo} height={200} width={200}/>
