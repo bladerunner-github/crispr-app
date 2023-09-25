@@ -26,7 +26,7 @@ function Footer()
     const [color, setColor] = useState('neutral');
     return (
         // FOOTER BEGINS....
-        <Sheet className="container"
+        <Sheet className="footer"
           variant="solid"
           color='neutral'
           invertedColors
