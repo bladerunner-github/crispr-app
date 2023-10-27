@@ -157,11 +157,14 @@
     }
 }
 
+/* first break point */
+
 @media (max-width: 576px) {
 
 
     .main {
         max-width: 100%;
+        width: 100%;
     }
 
     .nav-row {
@@ -236,6 +239,7 @@
         flex-direction: row;
         max-width: 100%;
         width: 100%;
+        margin-left: 0.8%;
         /* border: 2px solid indigo; */
         /* height: min-content; */
         /* height: auto; */
@@ -357,9 +361,12 @@
     }
 }
 
+/* second break point */
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .main {
         max-width: 100%;
+        width: 100%;
+        /* border: 4px solid yellow; */
     }
 
     .nav-row {
@@ -415,14 +422,15 @@
     }
 
     .login-profile {
-        margin-left: 0rem;
+        margin-left: 10%;
         margin-top: 0.4rem;
         /* border: 2px solid violet; */
         width: 15%;
+        margin-right: 0rem;
     }
 
     .login-image-profile {
-        width: 56%;
+        width: 40%;
         margin-left: 0.7rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
@@ -434,6 +442,7 @@
         flex-direction: row;
         max-width: 100%;
         width: 100%;
+        margin-left: 1%;
         /* border: 2px solid indigo; */
         /* height: min-content; */
         /* height: auto; */
@@ -497,11 +506,68 @@
         width: 100%;
         flex: 1;
     }
+
+    .avatar-row {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    }
+
+    .avtar-heading {
+        width: 80%;
+
+        /* margin-left: 2rem; */
+    }
+
+    .avatar {
+        max-width: 100%;
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-left: 0px;
+        margin-right: 2rem;
+    }
+
+    .avatar-image-heading {
+        margin-left: 0%;
+        margin-right: 2rem;
+    }
+
+
+
+    .avatarimage {
+
+        margin-left: 1rem;
+        /* border: 2px solid black; */
+        width: 130%;
+        object-fit: cover;
+
+    }
+
+    .avatar-buttons {
+        /* border: 2px solid black; */
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .buttons1 {
+
+        margin-left: 1rem;
+    }
+
+    .zip {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 1025px) and (max-width:1440px) {
+/* third break point */
+@media screen and (min-width: 769px) and (max-width:1024px) {
     .main {
         max-width: 100%;
+        width: 100%;
     }
 
     .nav-row {
@@ -557,14 +623,14 @@
     }
 
     .login-profile {
-        margin-left: 0rem;
+        margin-left: 4rem;
         margin-top: 0.4rem;
         /* border: 2px solid violet; */
         width: 15%;
     }
 
     .login-image-profile {
-        width: 56%;
+        width: 35%;
         margin-left: 0.7rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
@@ -576,6 +642,7 @@
         flex-direction: row;
         max-width: 100%;
         width: 100%;
+        margin-left: 1%;
         /* border: 2px solid indigo; */
         /* height: min-content; */
         /* height: auto; */
@@ -639,10 +706,66 @@
         width: 100%;
         flex: 1;
     }
+
+
+    .avatar-row {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    }
+
+    .avtar-heading {
+        width: 80%;
+
+        /* margin-left: 2rem; */
+    }
+
+    .avatar {
+        max-width: 100%;
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-left: 0px;
+        margin-right: 2rem;
+    }
+
+    .avatar-image-heading {
+        margin-left: 0%;
+        margin-right: 2rem;
+    }
+
+
+
+    .avatarimage {
+
+        margin-left: 1rem;
+        /* border: 2px solid black; */
+        width: 130%;
+        object-fit: cover;
+
+    }
+
+    .avatar-buttons {
+        /* border: 2px solid black; */
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .buttons1 {
+
+        margin-left: 1rem;
+    }
+
+    .zip {
+        width: 100%;
+    }
 }
 
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
     .main {
         max-width: 100%;
     }
@@ -700,14 +823,15 @@
     }
 
     .login-profile {
-        margin-left: 0rem;
+        margin-left: 6rem;
+        /* right: 0rem; */
         margin-top: 0.4rem;
         /* border: 2px solid violet; */
         width: 15%;
     }
 
     .login-image-profile {
-        width: 56%;
+        width: 25%;
         margin-left: 0.7rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
