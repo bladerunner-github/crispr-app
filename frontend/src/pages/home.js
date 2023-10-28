@@ -11,7 +11,7 @@ function Home() {
         <p>content here</p>
         <Link to="./login">
         <button>Log in</button>
-      </Link>
+        </Link>
         
       </div>
     </div>

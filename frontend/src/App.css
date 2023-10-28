@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   width: 100%;
   height: auto;
@@ -10,3 +15,26 @@ body {
   padding: 0;
   margin: 0;
 }
+
+
+
+.all-blogs
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+  gap: 5rem;
+  margin:1.5rem ;
+}
+
+@media (max-width: 500px) 
+{
+    .all-blogs 
+    {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0.5rem; 
+        gap:1rem
+    }
+} 
