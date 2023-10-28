@@ -157,7 +157,7 @@ class EventForm extends Component {
                                 {/* avatar row done */}
                                 {/* cover photo row starts */}
                                 <div className="mb-8 flex flex-row">
-                                    <div className="mb-3 mb-md-0 col-md-3 w-80">
+                                    <div className="mb-3 mb-md-0 col-md-3 w-80 photos">
                                         <h5 className="mb-0 font-semibold text-slate-700">Cover photo</h5>
                                     </div>
                                     <ImageUploadForm />
