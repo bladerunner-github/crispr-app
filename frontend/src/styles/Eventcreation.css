@@ -7,6 +7,7 @@
     /* flex-wrap: nowrap; */
 /* } */
 
+
 .card {
     --bs-card-spacer-y: 1.25rem;
     --bs-card-spacer-x: 1.25rem;
@@ -152,7 +153,7 @@
 
 @media (max-width:320px) {
     .avatarimage {
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         max-width: 100%;
     }
 }
@@ -558,6 +559,17 @@
         margin-left: 1rem;
     }
 
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+    }
+
     .zip {
         width: 100%;
     }
@@ -762,6 +774,17 @@
     .zip {
         width: 100%;
     }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+    }
 }
 
 
@@ -832,7 +855,169 @@
 
     .login-image-profile {
         width: 25%;
-        margin-left: 0.7rem;
+        margin-left: 8rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+    }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .displaying {
+        margin-left: 37%;
+
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .main {
+        max-width: 100%;
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 6rem;
+        /* right: 0rem; */
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+    }
+
+    .login-image-profile {
+        width: 20%;
+        margin-left: 28rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
     }

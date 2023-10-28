@@ -4,6 +4,7 @@ import { setGlobalData, getGlobalData } from './globalState';
 import './styles/Eventcreation.css'
 import login_img from "./assets/user-login.png"
 import menu from './assets/menu.png'
+import ImageUploadForm from './components/ImageUploadForm';
 
 class EventForm extends Component {
     constructor(props) {
@@ -159,42 +160,14 @@ class EventForm extends Component {
                                     <div className="mb-3 mb-md-0 col-md-3 w-80">
                                         <h5 className="mb-0 font-semibold text-slate-700">Cover photo</h5>
                                     </div>
-                                    <div className="col-md-9 border-black  w-4/5">
-                                        <div >
-                                            <form action="#" className="dropzone mb-3 py-10 border-dashed coverphoto h-56">
-                                                <section className="container">
-                                                    <div role="presentation" tabindex="0" className="dropzone">
-                                                        <input accept="" multiple="" type="file" style={{ display: "none" }} tabindex="-1" />
-                                                        <p className="text-center text-slate-500 mt-12">Drag 'n' drop some files here, or click to select files</p>
-                                                    </div>
-                                                    <aside className='aside'></aside>
-                                                </section>
-                                            </form>
-                                            <button type="submit" className="btn btn-primary text-xl hover:bg-blue-800 hover:text-white w-40 h-10 ">Change
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <ImageUploadForm />
                                 </div>
                                 {/* blog photo */}
                                 <div className="mb-8 flex flex-row">
                                     <div className="mb-3 mb-md-0 col-md-3 w-80">
                                         <h5 className="mb-0 font-semibold text-slate-700">blog photo</h5>
                                     </div>
-                                    <div className="col-md-9 border-black  w-4/5">
-                                        <div >
-                                            <form action="#" className="dropzone mb-3 py-10 border-dashed coverphoto h-56">
-                                                <section className="container">
-                                                    <div role="presentation" tabindex="0" className="dropzone">
-                                                        <input accept="" multiple="" type="file" style={{ display: "none" }} tabindex="-1" />
-                                                        <p className="text-center text-slate-500 mt-12">Drag 'n' drop some files here, or click to select files</p>
-                                                    </div>
-                                                    <aside className='aside'></aside>
-                                                </section>
-                                            </form>
-                                            <button type="submit" className="btn btn-primary  text-xl hover:bg-blue-800 hover:text-white w-40 h-10">Change
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <ImageUploadForm />
                                 </div>
                                 {/* basic information row */}
                                 <div className='flex flex-col'>
@@ -208,12 +181,12 @@ class EventForm extends Component {
                                                 <input type="text" className="form-control" placeholder="Title of the event" id="eventtitle" required="" />
                                             </div>
                                         </div>
-                                        <div className="mb-3 row basicinfo">
+                                        <div className="mb-3 row basicinfo name-div">
                                             <label htmlfor="fullName" className="col-sm-4 col-form-label form-label text-lg w-64">Full name  </label>
-                                            <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80">
+                                            <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
                                                 <input type="text" className="form-control" placeholder="First name" id="fullName" required="" />
                                             </div>
-                                            <div className="col-sm-4 ml-2 mr-2 mt-1 w-72">
+                                            <div className="col-sm-4 ml-2 mr-2 mt-1 w-72 displaying">
                                                 <input type="text" className="form-control" placeholder="Last name" id="lastName" required="" />
                                             </div>
                                         </div>
@@ -226,16 +199,10 @@ class EventForm extends Component {
                                         <div className="mb-3 row basicinfo">
                                             <label className="col-sm-4 form-label w-64" htmlfor="country">Location</label>
                                             <div class="col-md-8 col-12  w-[39.6rem] ">
-                                                <select name="" className="form-control form-select" id="country">
-                                                    <option value="" className="text-muted">Select Country</option>
-                                                    <option value="India" className="text-dark">India</option>
-                                                    <option value="US" className="text-dark">US</option>
-                                                    <option value="UK" className="text-dark">UK</option>
-                                                    <option value="UAE" className="text-dark">UAE</option>
-                                                </select>
+                                                <input placeholder="Location" required="" type="text" id="Location" className="form-control" />
                                             </div>
                                         </div>
-                                        <div className="mb-3 row basicinfo">
+                                        {/* <div className="mb-3 row basicinfo">
                                             <label className="col-sm-4 form-label w-64" htmlfor="addressLine">Address line 1</label>
                                             <div className="col-md-8 col-12  w-[39.6rem]">
                                                 <input placeholder="Enter Address line 1" required="" type="text" id="addressLine" className="form-control" />
@@ -245,13 +212,13 @@ class EventForm extends Component {
                                             <label className="col-sm-4 form-label w-64" htmlfor="addressLineTwo">Address line 2</label>
                                             <div className="col-md-8 col-12  w-[39.6rem]"><input placeholder="Enter Address line 2" required="" type="text" id="addressLineTwo" className="form-control" />
                                             </div>
-                                        </div>
-                                        <div className="mb-3 row basicinfo">
+                                        </div> */}
+                                        <div className="mb-3 row basicinfo Time">
                                             <label htmlfor="Timing" className="col-sm-4 col-form-label form-label text-lg w-64">Time</label>
-                                            <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80">
+                                            <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
                                                 <input type="date" className="form-control" placeholder="date" id="date" required="" />
                                             </div>
-                                            <div className="col-sm-4 ml-2 mr-2 mt-1 w-72">
+                                            <div className="col-sm-4 ml-2 mr-2 mt-1 w-72 displaying">
                                                 <input type="time" className="form-control" placeholder="time" id="time" required="" />
                                             </div>
                                         </div>
@@ -262,17 +229,17 @@ class EventForm extends Component {
                                             </div>
                                         </div>
                                         <div className="mb-3 row basicinfo">
-                                            <label className="col-sm-4 form-label  w-64" htmlfor="phone">Phone <span className="text-muted">(Optional)</span></label>
+                                            <label className="col-sm-4 form-label  w-64" htmlfor="phone">Phone <span className="text-muted"></span></label>
                                             <div className="col-md-8 col-12  w-[39.6rem]">
-                                                <input placeholder="Enter Phone" type="text" id="phone" className="form-control" />
+                                                <input placeholder="Enter Phone" type="number" id="phone" className="form-control" />
                                             </div>
                                         </div>
 
                                         <div className="align-items-center row basicinfo">
-                                            <label className="col-sm-4 form-label w-64" htmlfor="zipcode">Zip code<i className="fe fe-info fs-4 me-2 text-muted icon-xs"></i></label>
+                                            {/* <label className="col-sm-4 form-label w-64" htmlfor="zipcode">Zip code<i className="fe fe-info fs-4 me-2 text-muted icon-xs"></i></label> */}
                                             <div>
                                                 <div className="col-md-8 col-12  w-[39.6rem] zip">
-                                                    <input placeholder="Enter Zip code" required="" type="text" id="zipcode" className="form-control" />
+                                                    {/* <input placeholder="Enter Zip code" required="" type="text" id="zipcode" className="form-control" /> */}
                                                 </div>
                                                 <div className="mt-0 col-md-8 col-12 offset-md-4 border-1">
                                                     <button type="submit" className="btn btn-primary bg-blue-600 text-white text-xl hover:bg-blue-800 w-44">Save Changes</button>
