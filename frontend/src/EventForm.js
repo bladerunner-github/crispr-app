@@ -28,7 +28,7 @@ class EventForm extends Component {
         const data = getGlobalData();
         data.push(component)
         setGlobalData(data)
-        const response = await fetch('http://localhost:8080/demo', {      //fetch will fetch the given api
+        const response = await fetch('http://localhost:3000/', {      //fetch will fetch the given api
             method: 'POST',                                                 //method that is used to send data should be same only
             headers: {
                 'Content-Type': 'application/json'                            //we're sending JSON data in the request with the Content-Type header.

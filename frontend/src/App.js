@@ -17,7 +17,6 @@ import Approval from "./Approval";
 import Blog from "./components/Blog";
 import Banner from "./components/Banner";
 import ImageSlider from './components/ImageSlider';
-import SliderData  from './components/SliderData';
 import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
