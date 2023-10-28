@@ -1,0 +1,1096 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .main {
+    display: flex;
+    /* flex-wrap: nowrap; */
+/* } */
+
+
+.card {
+    --bs-card-spacer-y: 1.25rem;
+    --bs-card-spacer-x: 1.25rem;
+    --bs-card-title-spacer-y: 1.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: 0.375rem;
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: 0.5rem;
+    --bs-card-cap-padding-y: 0.625rem;
+    --bs-card-cap-padding-x: 1.25rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, .03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-.5*var(--bs-gutter-x));
+    margin-left: calc(-.5*var(--bs-gutter-x));
+    border-radius: 1em;
+    margin-bottom: 0.4em;
+}
+
+.menudiv {
+    width: 3%;
+    margin-left: 1%;
+    margin-top: 0.2%;
+    /* height: 90%; */
+    /* border: 2px solid blue; */
+
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dash {
+    /* display: none; */
+    /* position: relative; */
+    position: sticky;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    /* max-width: 250px; */
+    padding: 0;
+    background-color: #212b36;
+    border-right: 1px solid #212b36;
+    transition: margin .25s ease-out;
+    border-radius: 0.3rem;
+    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    /* margin-top: 2rem; */
+}
+
+
+/* .btn-outline-white {
+    border-color: #dfe3e8;
+    color: #637381;
+} */
+.basicinfo {
+    /* background-color: silver; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* margin-left: 2rem; */
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #637381;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c4cdd5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.col-form-label {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    color: #212b36;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    color: #212b36;
+}
+
+
+
+.coverphoto {
+    border: 0.2px solid slategrey;
+    border-radius: 3%;
+}
+
+.generalrow {}
+
+.avatar-row {}
+
+@media (max-width:320px) {
+    .avatarimage {
+        /* border: 2px solid yellow; */
+        max-width: 100%;
+    }
+}
+
+/* first break point */
+
+@media (max-width: 576px) {
+
+
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 60%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 0rem;
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+    }
+
+    .login-image-profile {
+        width: 56%;
+        margin-left: 0.7rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0.8%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+
+    }
+
+    .avatar-row {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    }
+
+    .avtar-heading {
+        width: 80%;
+
+        /* margin-left: 2rem; */
+    }
+
+    .avatar {
+        max-width: 100%;
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-left: 0px;
+        margin-right: 2rem;
+    }
+
+    .avatar-image-heading {
+        margin-left: 0%;
+        margin-right: 2rem;
+    }
+
+
+
+    .avatarimage {
+
+        margin-left: 1rem;
+        /* border: 2px solid black; */
+        width: 130%;
+        object-fit: cover;
+
+    }
+
+    .avatar-buttons {
+        /* border: 2px solid black; */
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .buttons1 {
+
+        margin-left: 1rem;
+    }
+
+
+
+    .zip {
+        width: 100%;
+    }
+}
+
+/* second break point */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .main {
+        max-width: 100%;
+        width: 100%;
+        /* border: 4px solid yellow; */
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 60%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 10%;
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+        margin-right: 0rem;
+    }
+
+    .login-image-profile {
+        width: 40%;
+        margin-left: 0.7rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 1%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+    }
+
+    .avatar-row {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    }
+
+    .avtar-heading {
+        width: 80%;
+
+        /* margin-left: 2rem; */
+    }
+
+    .avatar {
+        max-width: 100%;
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-left: 0px;
+        margin-right: 2rem;
+    }
+
+    .avatar-image-heading {
+        margin-left: 0%;
+        margin-right: 2rem;
+    }
+
+
+
+    .avatarimage {
+
+        margin-left: 1rem;
+        /* border: 2px solid black; */
+        width: 130%;
+        object-fit: cover;
+
+    }
+
+    .avatar-buttons {
+        /* border: 2px solid black; */
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .buttons1 {
+
+        margin-left: 1rem;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zip {
+        width: 100%;
+    }
+}
+
+/* third break point */
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 60%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 4rem;
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+    }
+
+    .login-image-profile {
+        width: 35%;
+        margin-left: 0.7rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        margin-left: 1%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+    }
+
+
+    .avatar-row {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    }
+
+    .avtar-heading {
+        width: 80%;
+
+        /* margin-left: 2rem; */
+    }
+
+    .avatar {
+        max-width: 100%;
+        /* border: 2px solid rebeccapurple; */
+        width: 100%;
+        /* border: 2px solid black; */
+        margin-left: 0px;
+        margin-right: 2rem;
+    }
+
+    .avatar-image-heading {
+        margin-left: 0%;
+        margin-right: 2rem;
+    }
+
+
+
+    .avatarimage {
+
+        margin-left: 1rem;
+        /* border: 2px solid black; */
+        width: 130%;
+        object-fit: cover;
+
+    }
+
+    .avatar-buttons {
+        /* border: 2px solid black; */
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
+    }
+
+    .buttons1 {
+
+        margin-left: 1rem;
+    }
+
+    .zip {
+        width: 100%;
+    }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .main {
+        max-width: 100%;
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 60%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 6rem;
+        /* right: 0rem; */
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+    }
+
+    .login-image-profile {
+        width: 25%;
+        margin-left: 8rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+    }
+
+    .Time {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .displaying {
+        margin-left: 37%;
+
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .main {
+        max-width: 100%;
+    }
+
+    .nav-row {
+        /* margin-right: 0.6rem; */
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .nav-row-first-div {
+        margin-left: 0%;
+        max-width: 98%;
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+
+    .nav-row-contents {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* border: 2px solid yellow; */
+        height: 100%;
+    }
+
+    .menudiv {
+        /* border: 2px solid green; */
+        width: 3rem;
+        margin-right: 1rem;
+        margin-top: 0.4rem;
+        margin-left: 3%;
+    }
+
+    .menu {
+        width: 100%;
+        /* border: 2px solid yellow; */
+    }
+
+    .nav-row-search {
+        /* border: 2px solid indigo; */
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 0.4rem;
+        /* margin-left: 5%; */
+    }
+
+    .search {
+        /* border: 2px solid red; */
+        width: 100%;
+        margin-right: 5rem;
+        /* padding: 0rem 0rem; */
+        margin-left: 0rem;
+        margin-top: 0rem;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+    }
+
+    .login-profile {
+        margin-left: 6rem;
+        /* right: 0rem; */
+        margin-top: 0.4rem;
+        /* border: 2px solid violet; */
+        width: 15%;
+    }
+
+    .login-image-profile {
+        width: 20%;
+        margin-left: 28rem;
+        margin-top: 0.2rem;
+        /* border: 2px solid chocolate; */
+    }
+
+    .overall-card {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        /* border: 2px solid indigo; */
+        /* height: min-content; */
+        /* height: auto; */
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+
+    .hidden-menubar {
+        /* z-index: 3; */
+        width: fit-content;
+        height: fit-content;
+        white-space: nowrap;
+        margin: 0;
+        max-height: 80%;
+        /* Prevent text from wrapping within the div */
+        /* overflow:; */
+        /* Hide overflowing content */
+        text-overflow: ellipsis;
+    }
+
+    .dash {
+        z-index: 1;
+        max-width: 100%;
+        height: 110%;
+        /* font-size: medium; */
+        /* width: ; */
+    }
+
+    .alltexts {
+        font-size: small;
+    }
+
+    .parent-card {
+        /* border: 2px solid blue; */
+        /* margin-right: 5rem; */
+        max-width: 100%;
+        width: 100%;
+        /* margin: 0.2rem; */
+        margin-right: 0.2rem;
+        /* min-width: 30%; */
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .card {
+        /* position: absolute; */
+        max-width: 100%;
+        width: 100%;
+        /* width: 100%; */
+        /* border: 2px solid red; */
+        padding: 0.2rem;
+        flex: 1;
+
+    }
+
+    .card-body {
+        max-width: 100%;
+        width: 100%;
+        flex: 1;
+    }
+}

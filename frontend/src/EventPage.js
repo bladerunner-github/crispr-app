@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-// import { getGlobalData } from './globalState';
-// import EventCard from './EventCard';
+import { getGlobalData } from './globalState';
+import EventCard from './EventCard';
 import Eventpage from './components/Eventpage';
 import { events } from './components/index1';
 
