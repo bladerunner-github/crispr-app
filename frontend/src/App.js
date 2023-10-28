@@ -17,6 +17,9 @@ import Blog from "./components/Blog";
 import Banner from "./components/Banner";
 import ImageSlider from './components/ImageSlider';
 import SliderData  from './components/SliderData';
+import EventListTable from "./pages/EventListTable";
+import EventCardList from "./components/EventCardList";
+import EventCard from "./components/EventCardIcon";
 
 function App() {
   // State to track the user's authentication status
@@ -31,7 +34,7 @@ function App() {
   const handleLogout = () => {
     setIsLoggedIn(false);
   };
-
+  var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div className="App">
       <Router>
@@ -51,6 +54,8 @@ function App() {
           <Route path="/Approval" element={<Approval/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/event-table" element={<EventListTable />} />
+
           <Route
             path="/login"
             element={<LoginForm onLogin={handleLogin} />} // Pass handleLogin as a prop
@@ -59,7 +64,9 @@ function App() {
       </Router>
 
       <ImageSlider slides={SliderData} />    
+      {/* <EventCardList items={items} active={0}/> */}
       <Banner />
+      
       <div className="all-blogs">
         <Blog />
         <Blog />
