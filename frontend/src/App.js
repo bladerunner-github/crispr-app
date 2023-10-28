@@ -1,5 +1,6 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import HomeUser from "./pages/homeuser";
@@ -22,14 +23,23 @@ function App() {
   // State to track the user's authentication status
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const savedAuthStatus = localStorage.getItem("isAuthenticated");
+    if (savedAuthStatus === "true") {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   // Function to handle successful login
   const handleLogin = () => {
     setIsLoggedIn(true);
+    localStorage.setItem("isAuthenticated", "true");
   };
 
   // Function to handle logout
   const handleLogout = () => {
     setIsLoggedIn(false);
+    localStorage.removeItem("isAuthenticated");
   };
 
   return (
@@ -46,6 +56,7 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="/home" element={<HomeUser />} /> */}
+          <Route path="/home" element={isLoggedIn ? <HomeUser /> : <Home />} />
           <Route path="/menu" element={<EventPage />} />
           <Route path="/Form" element={<EventForm />} />
           <Route path="/Approval" element={<Approval />} />
@@ -53,7 +64,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/login"
-            element={<LoginForm onLogin={handleLogin} />} // Pass handleLogin as a prop
+            element={<LoginForm
+              onLogin={handleLogin}
+              onLogout={handleLogout}
+              isAuthenticated={isLoggedIn}
+            />} // Pass handleLogin as a prop
           />
         </Routes>
       </Router>

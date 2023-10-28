@@ -1,85 +1,270 @@
-/* login.css */
+/* .cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
 
-/* Styles for the login container */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.text {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.alt-login {
+  display: flex;
+  gap: 10px;
+}
+
+
+.popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.popup p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+.logout-button {
+  background-color: #f00;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  margin-top: 6%;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+}
+
+
+.logout-button:hover {
+  background-color: #d00;
+
+}
+
+
+.logout-container {
+  width: 20%;
+  height: 20%;
+
+  border: 1px solid slategrey;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logout-container p {
+  margin-top: 10%;
+} */
+/* .cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-form,
+.logout-container {
+  background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.login-form input,
+.logout-container p {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-btn,
+.logout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.popup h3 {
+  color: #ff0000;
+} */
+
+/* Add any additional styles you need for your specific design. */
+
+body {
+  /* background: url('https://img.freepik.com/premium-vector/futuristic-background-style_23-2148503794.jpg') no-repeat center center fixed !important; */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .cover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f7f7f7;
-  }
-  
-  /* Styles for the login form */
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Styles for the "Or login using" text */
-  .text {
-    margin: 10px 0;
-    font-size: 14px;
-    color: #666;
-  }
-  
-  /* Styles for the alternate login options */
-  .alt-login {
-    display: flex;
-    gap: 10px;
-  }
-  
-  /* Styles for the popup */
-  .popup {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #ff6b6b;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .popup h3 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .popup p {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form,
+.logout-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 32%;
+  /* height: 40%; */
+  /* Set the container width to 50% */
+  margin: 0 auto;
+  /* Center the container horizontally */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-form:hover,
+.logout-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.login-form input,
+.logout-container p {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+.login-form input:hover,
+.login-form input:focus,
+.logout-container p:hover,
+.logout-container p:focus {
+  border: 2px solid #007bff;
+}
+
+.login-btn,
+.logout-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover,
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.popup:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.popup h3 {
+  color: #ff0000;
+}
