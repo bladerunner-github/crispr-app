@@ -1,0 +1,44 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > div > label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form > div > input[type="text"],
+form > div > input[type="tel"],
+form > div > textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form > div > input[type="file"] {
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form > div >  ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+form > div > li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+pre {
+  margin: 0;
+}

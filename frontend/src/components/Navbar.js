@@ -14,22 +14,22 @@ class Navbar extends Component {
   render() {
     return (
       <nav>
-        <Link to="/">
+        <Link to="/home">
           <img src={Logo} />
         </Link>
         <div>
           <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
             <li>
-              <Link to="/"> Home </Link>
+              <Link to="/home"> Home </Link>
             </li>
             <li>
-              <Link to="/"> Events </Link>
+              <Link to="/Form">Create Event </Link>
+            </li>
+            <li>
+              <Link to="/">Upcoming Events </Link>
             </li>
             <li>
               <Link to="/"> Article </Link>
-            </li>
-            <li>
-              <Link to="/"> Buzzer </Link>
             </li>
             <li>
               <Link to="./login">

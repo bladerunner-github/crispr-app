@@ -60,6 +60,19 @@ nav > a >img{
   align-items: center;
 }
 
+@media screen and (min-width: 1024px){
+  #navbar li a {    
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #navbar li a {    
+    font-size: 1rem;
+  }
+}
+
+
 @media screen and (max-width: 1024px){
   nav {
     display: flex;
