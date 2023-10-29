@@ -7,7 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
+import { useEffect ,useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { EditEventApproval } from '../components/EditEventApproval';
 
@@ -51,6 +51,27 @@ const rows =             // to be extracted from DB
 
 export default function EventListTable() 
 {
+  const [data, setData] = useState([]);
+
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch('http://localhost:8080/demo', {
+          method: 'GET',
+        });
+        const info = await response.json();
+        console.log(info)
+        setData(info)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    fetchData();
+  }, []);
+
+  //data array would have the data imported from the database
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 300 }} aria-label="customized table">
@@ -71,7 +92,7 @@ export default function EventListTable()
               </StyledTableCell>
               <StyledTableCell align="center">{row.eventType}</StyledTableCell>
               <StyledTableCell align="center">
-                <EditEventApproval initialStatus={row.approvalStatus}/>
+                <EditEventApproval initialStatus={row.approvalStatus} data={data}/>
                 </StyledTableCell>
               {/* <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell> */}

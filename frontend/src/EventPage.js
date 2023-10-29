@@ -35,6 +35,20 @@ import { events } from './components/index1';
 //   );
 // }
 function EventPage() {
+    useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch('http://localhost:8080/demo', {
+          method: 'GET',
+        });
+        const info = await response.json();
+        console.log(info)
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    fetchData();
+  }, []);
   return (
     <div>
       {

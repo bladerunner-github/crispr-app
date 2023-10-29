@@ -5,7 +5,6 @@ class Eventpage extends Component {
     render() {
         // const data = this.props.data
         const hostname = this.props.hostname;
-        console.log(hostname);
         const imgURL = this.props.imgURL;
         const about = this.props.about;
         const date = this.props.date;

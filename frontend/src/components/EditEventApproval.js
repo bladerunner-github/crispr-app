@@ -1,6 +1,22 @@
 import React, { useState } from 'react'
 export const EditEventApproval = ({ initialStatus }) => 
-{
+{   
+  const approvedClicked = async (i) => {
+    let id = this.props.data[i]._id;
+    let approvedStatus = true;
+    let dataUpdate = {id,approvedStatus};
+    console.log(dataUpdate)
+    const response = await fetch('http://localhost:8080/demo' , {
+        method:'PUT',
+        headers:{
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify(dataUpdate)
+    })
+    
+  };
+
+
     const [ status, setStatus ] = useState(initialStatus);
     const btns = 
     (
@@ -16,6 +32,7 @@ export const EditEventApproval = ({ initialStatus }) =>
 
     const handleApprove = () =>
     {
+        // approvedClicked();
         setStatus("Approved");
     }
 
@@ -24,9 +41,7 @@ export const EditEventApproval = ({ initialStatus }) =>
         setStatus("Rejected");
     }
 
-    // return (
-    //     status === "Pending" ? btns : status
-    // );
+
 
     return (
         status === "Pending" ? (
