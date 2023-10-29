@@ -4,6 +4,7 @@ import EventCard from './EventCard';
 import Eventpage from './components/Eventpage';
 import { events } from './components/index1';
 
+
 // function EventPage() {
 //   const [data, setData] = useState([]);
 
@@ -35,6 +36,7 @@ import { events } from './components/index1';
 //   );
 // }
 function EventPage() {
+  const [data,setData] = useState([])
     useEffect(() => {
     async function fetchData() {
       try {
@@ -42,35 +44,35 @@ function EventPage() {
           method: 'GET',
         });
         const info = await response.json();
-        console.log(info)
+        setData(info)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     }
     fetchData();
   }, []);
+
+  const Events = data.map(d => {
+    let hostname = `${d.fName} ${d.lName}`;
+    let imgURL = "https://www.w3schools.com/css/img_lights.jpg"
+    return ({...d,hostname,imgURL})
+  })
+  console.log(Events)
   return (
     <div>
       {
 
-        events.map((e) => (
-          <Eventpage
-
+        Events.map((e) => (
+           (e.approved ?  <Eventpage
             hostname={e.hostname}
             imgURL={e.imgURL}
-            about={e.about}
-            title={e.Title}
+            about={e.description}
+            title={e.title}
             date={e.date}
             time={e.time}
             location={e.location}
+          /> : null)
 
-
-          // key={review.customerName}
-          // imgURL={review.imgURL}
-          // customerName={review.customerName}
-          // rating={review.rating}
-          // feedback={review.feedback}
-          />
         ))
       }
     </div>

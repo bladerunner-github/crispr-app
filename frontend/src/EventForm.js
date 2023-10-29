@@ -9,7 +9,7 @@ import ImageUploadForm from './components/ImageUploadForm';
 class EventForm extends Component {
     constructor(props) {
         super(props);
-        this.state = { fname: '',lname:'', title: '', description: '', location: '', time: '', date: '',email:'',phone :0, ishidden: false }
+        this.state = { fname: '',lname:'', title: '', description: '', location: '', time: '', date: '',email:'',phone :null, ishidden: false }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.dashboard = this.dashboard.bind(this);
@@ -25,8 +25,7 @@ class EventForm extends Component {
     async handleSubmit(evt) {
         evt.preventDefault();
         const response = await fetch('http://localhost:8080/demo', {      //fetch will fetch the given api
-            method: 'POST',
-                                                                  //method that is used to send data should be same only
+            method: 'POST',                                           //method that is used to send data should be same only
             headers: {
                 'Content-Type': 'application/json'                            //we're sending JSON data in the request with the Content-Type header.
             },
