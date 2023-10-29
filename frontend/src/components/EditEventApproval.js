@@ -25,7 +25,7 @@ export const EditEventApproval = ({ initialStatus }) =>
                 <i className="fa-solid fa-check fa-2xl" style={{color: "#00ff00"}}></i>
             </button>
             <button style={{backgroundColor:"initial"}} onClick={() => handleReject()} >
-                <i class="fa-solid fa-x fa-2xl" style={{color: "#ff0000"}}></i>
+                <i className="fa-solid fa-x fa-2xl" style={{color: "#ff0000"}}></i>
             </button>
         </div>
     );
@@ -44,7 +44,7 @@ export const EditEventApproval = ({ initialStatus }) =>
 
 
     return (
-        status === "Pending" ? (
+        status === "pending" ? (
             btns
         ) : (
             <div>
