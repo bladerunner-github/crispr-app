@@ -26,7 +26,7 @@ const LoginForm = (props) => {
       // alert("Login successful!");
       // setIsAuthenticated(true);
       props.onLogin();
-      navigate("/"); // Use navigate to redirect to the home page
+      navigate("/home"); // Use navigate to redirect to the home page
       // Call the onLogin function provided as a prop
       localStorage.setItem("isAuthenticated", "true");
 
