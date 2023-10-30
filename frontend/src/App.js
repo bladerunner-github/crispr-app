@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import HomeUser from "./pages/homeuser";
@@ -10,7 +10,8 @@ import About from "./pages/Article";
 import Contact from "./pages/Contact";
 import NavbarLoggedIn from "./components/navbarmoderator";
 import NavbarLoggedOut from "./components/Navbar";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 import LoginForm from "./components/login"; // Import your LoginForm component
 import EventForm from "./EventForm";
 import EventPage from "./EventPage";
@@ -48,39 +49,39 @@ function App() {
     localStorage.removeItem("isAuthenticated");
   };
   var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  // const location = useLocation(); // Get the current location
+  const location = useLocation(); // Get the current location
   return (
     <div className="App">
-      <Router>
-        {/* Conditionally render the Navbar based on authentication */}
-        {isLoggedIn ? (
-          // Render Navbar for logged-in users
-          <NavbarLoggedIn onLogout={handleLogout} />
-        ) : (
-          // Render Navbar for logged-out users
-          <NavbarLoggedOut />
-        )}
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="/home" element={<HomeUser />} /> */}
-          <Route path="/home" element={isLoggedIn ? <HomeUser /> : <Home />} />
-          <Route path="/menu" element={<EventPage />} />
-          <Route path="/Form" element={<EventForm />} />
-          <Route path="/Approval" element={<Approval />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/event-table" element={<EventListTable />} />
 
-          <Route
-            path="/login"
-            element={<LoginForm
-              onLogin={handleLogin}
-              onLogout={handleLogout}
-              isAuthenticated={isLoggedIn}
-            />} // Pass handleLogin as a prop
-          />
-        </Routes>
-      </Router>
+      {/* Conditionally render the Navbar based on authentication */}
+      {isLoggedIn ? (
+        // Render Navbar for logged-in users
+        <NavbarLoggedIn onLogout={handleLogout} />
+      ) : (
+        // Render Navbar for logged-out users
+        <NavbarLoggedOut />
+      )}
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/home" element={<HomeUser />} /> */}
+        <Route path="/home" element={isLoggedIn ? <HomeUser /> : <Home />} />
+        <Route path="/menu" element={<EventPage />} />
+        <Route path="/Form" element={<EventForm />} />
+        <Route path="/Approval" element={<Approval />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/event-table" element={<EventListTable />} />
+
+        <Route
+          path="/login"
+          element={<LoginForm
+            onLogin={handleLogin}
+            onLogout={handleLogout}
+            isAuthenticated={isLoggedIn}
+          />} // Pass handleLogin as a prop
+        />
+      </Routes>
+
 
       {/* <ImageSlider slides={SliderData} />
       <Banner />
@@ -90,7 +91,7 @@ function App() {
         <Blog />
         <Blog />
       </div> */}
-      {/* {location.pathname === "/home" || location.pathname === "/homeuser" ? (
+      {location.pathname === "/" ? (
         <>
 
           <ImageSlider slides={SliderData} />
@@ -101,7 +102,7 @@ function App() {
             <Blog />
           </div>
         </>
-      ) : null} */}
+      ) : null}
       <Footer />
     </div>
   );
