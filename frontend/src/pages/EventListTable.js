@@ -67,8 +67,8 @@ export default function EventListTable()
           method: 'GET',
         });
         const info = await response.json();
-        console.log(info)
         setData(info)
+        console.log(info)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -94,10 +94,10 @@ export default function EventListTable()
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {data.map((row) => (
             <StyledTableRow key={row.uuid}>
               <StyledTableCell component="th" scope="row" align='center'>
-                {row.eventTitle}
+                {row.title}
               </StyledTableCell>
               <StyledTableCell align="center">{row.img}</StyledTableCell>
               <StyledTableCell align="center">{row.name}</StyledTableCell>
@@ -106,7 +106,7 @@ export default function EventListTable()
               <StyledTableCell align="center">{row.email}</StyledTableCell>
               <StyledTableCell align="center">{row.phone}</StyledTableCell>
               <StyledTableCell align="center">
-                <EditEventApproval initialStatus={row.approvalStatus} data={data}/>
+                <EditEventApproval initialStatus={row.approved} data={row} id={row._id}/>
                 </StyledTableCell>
             </StyledTableRow>
           ))}

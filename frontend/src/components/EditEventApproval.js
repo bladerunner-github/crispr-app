@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-export const EditEventApproval = ({ initialStatus }) => 
+export const EditEventApproval = (props) => 
 {   
   const approvedClicked = async (i) => {
-    let id = this.props.data[i]._id;
+    let id = props.id;
     let approvedStatus = true;
     let dataUpdate = {id,approvedStatus};
-    console.log(dataUpdate)
     const response = await fetch('http://localhost:8080/demo' , {
         method:'PUT',
         headers:{
@@ -17,7 +16,7 @@ export const EditEventApproval = ({ initialStatus }) =>
   };
 
 
-    const [ status, setStatus ] = useState(initialStatus);
+    const [ status, setStatus ] = useState(props.initialStatus);
     const btns = 
     (
         <div>
@@ -30,21 +29,19 @@ export const EditEventApproval = ({ initialStatus }) =>
         </div>
     );
 
-    const handleApprove = () =>
+    const handleApprove = (i) =>
     {
-        // approvedClicked();
+        approvedClicked(i);
         setStatus("Approved");
+        
     }
 
     const handleReject = () =>
     {
         setStatus("Rejected");
     }
-
-
-
     return (
-        status === "pending" ? (
+        status === false ? (
             btns
         ) : (
             <div>
