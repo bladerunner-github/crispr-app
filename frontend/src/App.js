@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import HomeUser from "./pages/homeuser";
@@ -21,10 +22,12 @@ import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
 import SliderData from './components/SliderData';
+// import { useLocation } from "react-router-dom";
 
 function App() {
   // State to track the user's authentication status
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // const location = useLocation();
 
   useEffect(() => {
     const savedAuthStatus = localStorage.getItem("isAuthenticated");
@@ -45,6 +48,7 @@ function App() {
     localStorage.removeItem("isAuthenticated");
   };
   var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  // const location = useLocation(); // Get the current location
   return (
     <div className="App">
       <Router>
@@ -78,14 +82,26 @@ function App() {
         </Routes>
       </Router>
 
-      <ImageSlider slides={SliderData} />
+      {/* <ImageSlider slides={SliderData} />
       <Banner />
       
       <div className="all-blogs">
         <Blog />
         <Blog />
         <Blog />
-      </div>
+      </div> */}
+      {/* {location.pathname === "/home" || location.pathname === "/homeuser" ? (
+        <>
+
+          <ImageSlider slides={SliderData} />
+          <Banner />
+          <div className="all-blogs">
+            <Blog />
+            <Blog />
+            <Blog />
+          </div>
+        </>
+      ) : null} */}
       <Footer />
     </div>
   );

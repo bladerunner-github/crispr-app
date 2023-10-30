@@ -7,6 +7,9 @@
     /* flex-wrap: nowrap; */
 /* } */
 
+/* .main {
+    background-image: url("../assets/image.jpg");
+} */
 
 .card {
     --bs-card-spacer-y: 1.25rem;
@@ -797,7 +800,9 @@
 
     .nav-row {
         /* margin-right: 0.6rem; */
-        max-width: 90%;
+        /* border: 2px solid red; */
+        margin-left: 6%;
+        max-width: 85%;
         width: 90%;
     }
 
@@ -857,7 +862,7 @@
 
     .login-image-profile {
         width: 25%;
-        margin-left: 8rem;
+        margin-left: 7rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
     }
@@ -902,12 +907,14 @@
     }
 
     .parent-card {
-        /* border: 2px solid blue; */
+        border: 2px solid rgb(200, 205, 214);
+        /* border: 2px solid red; */
+        border-radius: 1.5%;
         /* margin-right: 5rem; */
-        max-width: 100%;
+        max-width: 85%;
         width: 100%;
         /* margin: 0.2rem; */
-        margin-right: 0.2rem;
+        margin-right: 6rem;
         /* min-width: 30%; */
         flex: 1;
         overflow: hidden;
@@ -932,26 +939,35 @@
         flex: 1;
     }
 
-    .Time {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
+    /* .Time {
+
+        width: 100%;
     }
 
     .name-div {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
+
+        width: 100%;
     }
 
-    .displaying {
-        margin-left: 37%;
+    
 
-        width: 80%;
+    .name-time {
+        width: 20%;
+    } */
+    .displaying {
+
+
+        width: 55%;
+    }
+
+    .basicinfo {
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
     }
 }
 
-@media screen and (min-width:1441px) {
+@media screen and (min-width:1441px) and (max-width:1660px) {
     .main {
         max-width: 100%;
     }
@@ -1019,7 +1035,7 @@
 
     .login-image-profile {
         width: 20%;
-        margin-left: 28rem;
+        margin-left: 32rem;
         margin-top: 0.2rem;
         /* border: 2px solid chocolate; */
     }
@@ -1064,12 +1080,13 @@
     }
 
     .parent-card {
-        /* border: 2px solid blue; */
+        border: 2px solid rgb(200, 205, 214);
+        border-radius: 2%;
         /* margin-right: 5rem; */
-        max-width: 100%;
+        max-width: 80%;
         width: 100%;
         /* margin: 0.2rem; */
-        margin-right: 0.2rem;
+        margin-right: 8.7rem;
         /* min-width: 30%; */
         flex: 1;
         overflow: hidden;
@@ -1092,5 +1109,23 @@
         max-width: 100%;
         width: 100%;
         flex: 1;
+    }
+
+    .Time {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .name-div {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .displaying {
+        /* margin-left: 37%; */
+
+        width: 30%;
     }
 }
