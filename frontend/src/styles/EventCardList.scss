@@ -5,63 +5,69 @@ body {
 }
 
 #carousel {
-    position:relative;
-    height: 400px;
-    width: 810px;
+    display: flex;
+    position: relative;
+    height: 23rem;
+    width: 50rem;
     margin: auto;
-    left: 0;
-    right: 0;
+    left: 0rem;
+    right: 0rem;
     top: 0;
-    bottom: 0;
+    bottom: 10rem;
+    flex-direction: row;
+    align-content: center;
+    // justify-content: center;
 }
 
 .arrow {
-    position: absolute;
-    width: 30px;
-    height: 30px;
+    position: relative;
+    width: 1.875rem; /* 30px converted to rem */
+    height: 1.875rem; /* 30px converted to rem */
     background-color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem; /* 25px converted to rem */
     border-radius: 50%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px converted to rem */
     color: #228291;
-    line-height: 30px;
-    margin-top: 85px;
+    line-height: 1.875rem; /* 30px converted to rem */
+    margin-top: 5.3125rem; /* 85px converted to rem */
     z-index: 1000;
 }
 
 .arrow-right {
-    left: 970px;
-    color:black;
+    position: relative;
+    left: 69rem; /* 970px converted to rem */
+    color: black;
+    
 }
 
-.arrow-left
-{
-    right: 1100px;
-    color:black
+.arrow-left {
+    right: 19rem; /* 1100px converted to rem */
+    color: black;
+    position: relative;
 }
+
 .item {
     text-align: center;
     color: white;
-    font-size: 40px;
-    position: absolute;
+    font-size: 2.5rem; /* 40px converted to rem */
+    position:absolute;
     transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
 }
 
-$level2-height: 6rem;
-$level2-width: 10rem;
-$level1-height: 8rem;
-$level1-width: 12rem;
-$level0-height: 10rem;
-$level0-width: 15rem;
+$level2-height: 0.375rem; /* 6px converted to rem */
+$level2-width: 15rem; /* 10px converted to rem */
+$level1-height: 8rem; /* 8px converted to rem */
+$level1-width: 15rem; /* 12px converted to rem */
+$level0-height: 10rem; /* 10px converted to rem */
+$level0-width: 15rem; /* 15px converted to rem */
 
-$level-2-left: 800px;
-$level-1-left: 600px;
-$level0-left: 300px;
-$level1-left: 50px;
-$level2-left: 0px;
-
+$level-2-left: 54rem; /* 800px converted to rem */
+$level-1-left: 37rem; /* 600px converted to rem */
+$level0-left: 20rem; /* 300px converted to rem */
+$level1-left: 3rem; /* 50px converted to rem */
+$level2-left: 0 rem; /* 0px remains 0rem */
 
 .level-2 {
     height: $level2-height;
@@ -69,7 +75,7 @@ $level2-left: 0px;
     line-height: $level2-height;
     background-color: #228291;
     left: $level-2-left;
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
 }
 
 .level-1 {
@@ -78,14 +84,13 @@ $level2-left: 0px;
     line-height: $level1-height;
     background-color: #6796E5;
     left: $level-1-left;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px converted to rem */
 }
 
 .level0 {
     height: $level0-height;
     width: $level0-width;
     line-height: $level0-height;
-    background-color: #4EC9E1;
     left: $level0-left;
 }
 
@@ -93,8 +98,7 @@ $level2-left: 0px;
     height: $level1-height;
     width: $level1-width;
     line-height: $level1-height;
-    background-color: #6796E5;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px converted to rem */
     left: $level1-left;
 }
 
@@ -102,19 +106,18 @@ $level2-left: 0px;
     height: $level2-height;
     width: $level2-width;
     line-height: $level2-height;
-    background-color: #228291;
-    margin-top: 25px;
-    // left: $level2-left;
-    right:800px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
+    left: $level2-left;
+    right: 50rem; /* 800px converted to rem */
 }
 
 .left-enter {
     opacity: 0;
     left: $level2-left - $level2-width;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
+    height: $level2-height - 0.9375rem; /* 30px converted to rem */
+    width: $level2-width - 0.625rem; /* 20px converted to rem */
+    line-height: $level2-height - 0.9375rem;
+    margin-top: 1rem; /* 40px converted to rem */
 }
 
 .left-enter.left-enter-active {
@@ -123,7 +126,7 @@ $level2-left: 0px;
     height: $level2-height;
     width: $level2-width;
     line-height: $level2-height;
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
     transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
@@ -133,33 +136,33 @@ $level2-left: 0px;
     height: $level2-height;
     width: $level2-width;
     line-height: $level2-height;
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
 }
 
 .left-leave.left-leave-active {
-    left: $level-2-left + $level2-width + 20;
+    left: $level-2-left + $level2-width + 0.625rem; /* 20px converted to rem */
     opacity: 0;
-    height: $level2-height - 30;
-    line-height: 120px;
-    margin-top: 40px;
-    width: $level2-width - 20;
+    height: $level2-height - 0.9375rem; /* 30px converted to rem */
+    line-height: 1.875rem; /* 120px converted to rem */
+    margin-top: 1rem; /* 40px converted to rem */
+    width: $level2-width - 0.625rem; /* 20px converted to rem */
     transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .right-enter {
     opacity: 0;
     left: $level-2-left + $level2-width;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
+    height: $level2-height - 0.9375rem; /* 30px converted to rem */
+    width: $level2-width - 0.625rem; /* 20px converted to rem */
+    line-height: $level2-height - 0.9375rem;
+    margin-top: 1rem; /* 40px converted to rem */
 }
 
 .right-enter.right-enter-active {
     left: $level-2-left;
     opacity: 1;
     height: $level2-height;
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
     line-height: $level2-height;
     width: $level2-width;
     transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
@@ -169,7 +172,7 @@ $level2-left: 0px;
     left: $level2-left;
     height: $level2-height;
     opacity: 1;
-    margin-top: 25px;
+    margin-top: 1.5625rem; /* 25px converted to rem */
     line-height: $level2-height;
     width: $level2-width;
 }
@@ -177,17 +180,95 @@ $level2-left: 0px;
 .right-leave.right-leave-active {
     left: $level2-left - $level2-width;
     opacity: 0;
-    height: $level2-height - 30;
-    width: $level2-width - 20;
-    line-height: $level2-height - 30;
-    margin-top: 40px;
+    height: $level2-height - 0.9375rem; /* 30px converted to rem */
+    width: $level2-width - 0.625rem; /* 20px converted to rem */
+    line-height: $level2-height - 0.9375rem;
+    margin-top: 1rem; /* 40px converted to rem */
     transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .noselect {
-    -webkit-user-select: none; 
-     -khtml-user-select: none; 
-       -moz-user-select: none; 
-        -ms-user-select: none;  
-            user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media(max-width: 1024px)
+{
+    .level2, .level-2
+    {
+        display: none;
+    }
+    .arrow-right 
+    {
+        left: 52rem;
+    }
+    
+    .arrow-left 
+    {
+        right: 1rem; 
+    }
+}
+
+@media(max-width: 768px)
+{
+    .level1, .level-1
+    {
+        display: none;
+    }
+    .arrow-right 
+    {
+        left: 38rem;
+    }
+    
+    .arrow-left 
+    {
+        left: 13rem; 
+    }
+    #carousel
+    {
+        width:50rem;
+    }
+}
+@media(max-width: 425px) 
+{ 
+    .arrow-right 
+    {
+        left: 20rem;
+    }
+    
+    .arrow-left 
+    {
+        left: 0rem; 
+    }  
+    .level0
+    {
+        left: 4rem
+    }
+    #carousel
+    {
+        width:25rem;
+    } 
+}
+@media(max-width: 320px) 
+{ 
+    .arrow-right 
+    {
+        left: 16rem;
+    }
+    
+    .arrow-left 
+    {
+        left: 0rem; 
+    }  
+    .level0
+    {
+        left: 2.5rem;
+    }
+    #carousel
+    {
+        width:20rem;
+    } 
 }
