@@ -20,7 +20,7 @@ export default function EventCardIcon()
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard{Math.random()}
+          Event Name
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -28,7 +28,7 @@ export default function EventCardIcon()
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+        <Button size="small">Register</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

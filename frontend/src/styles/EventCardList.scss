@@ -7,7 +7,7 @@ body {
 #carousel {
     display: flex;
     position: relative;
-    height: 23rem;
+    height: 30rem;
     width: 50rem;
     margin: auto;
     left: 0rem;
@@ -127,7 +127,7 @@ $level2-left: 0 rem; /* 0px remains 0rem */
     width: $level2-width;
     line-height: $level2-height;
     margin-top: 1.5625rem; /* 25px converted to rem */
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+    transition: left 0.3s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .left-leave {
@@ -146,7 +146,7 @@ $level2-left: 0 rem; /* 0px remains 0rem */
     line-height: 1.875rem; /* 120px converted to rem */
     margin-top: 1rem; /* 40px converted to rem */
     width: $level2-width - 0.625rem; /* 20px converted to rem */
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+    transition: left 0.3s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .right-enter {
@@ -165,7 +165,7 @@ $level2-left: 0 rem; /* 0px remains 0rem */
     margin-top: 1.5625rem; /* 25px converted to rem */
     line-height: $level2-height;
     width: $level2-width;
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+    transition: left 0.3s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .right-leave {
@@ -184,7 +184,7 @@ $level2-left: 0 rem; /* 0px remains 0rem */
     width: $level2-width - 0.625rem; /* 20px converted to rem */
     line-height: $level2-height - 0.9375rem;
     margin-top: 1rem; /* 40px converted to rem */
-    transition: left 1s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
+    transition: left 0.3s, opacity 1s, height 1s, width 1s, margin-top 1s, line-height 1s;
 }
 
 .noselect {

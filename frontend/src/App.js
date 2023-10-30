@@ -21,6 +21,7 @@ import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
 import SliderData from './components/SliderData';
+import EventCardIcon from "./components/EventCardIcon";
 
 function App() {
   // State to track the user's authentication status
@@ -66,7 +67,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/event-table" element={<EventListTable />} />
-
+          <Route path="/event-cards" element={<EventCardList />} />
           <Route
             path="/login"
             element={<LoginForm
@@ -77,8 +78,8 @@ function App() {
           />
         </Routes>
       </Router>
-
       <ImageSlider slides={SliderData} />
+      <EventCardList items={items} active={0}/>
       <Banner />
       
       <div className="all-blogs">
