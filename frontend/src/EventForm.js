@@ -74,8 +74,8 @@ class EventForm extends Component {
                         <div className="border-bottom pb-4 mb-4 flex flex-row nav-row-contents">
                             {/* <h1 className="mb-0 md:font-bold fon text-4xl sm:text-xl mt-2 ml-2">General</h1> */}
                             <div className='menudiv'><img src={menu} className='menu' onClick={this.dashboard} alt='' /></div>
-                            <div className='w-96 nav-row-search' > <input type="text" className="search form-control ml-32 mt-2 w-4" placeholder="Search here" id="fullName" required="" /></div>
-                            <div className='login-profile ml-[80rem] w-20'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgx-hu6OR-5p3liCUhudEwxmOKRL7kQv3Bw&usqp=CAU" className='login-image-profile ml-1 mt-1 w-14' alt='' /></div>
+                            <div className='w-[40%] nav-row-search' > <input type="text" className="search form-control ml-32 mt-2 w-4" placeholder="Search here" id="fullName" required="" /></div>
+                            <div className='login-profile ml-[53rem] w-20'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgx-hu6OR-5p3liCUhudEwxmOKRL7kQv3Bw&usqp=CAU" className='login-image-profile ml-1 mt-1 w-14' alt='' /></div>
                         </div>
                     </div>
 
@@ -182,7 +182,7 @@ class EventForm extends Component {
                                             </div>
                                         </div>
                                         <div className="mb-3 row basicinfo name-div">
-                                            <label htmlfor="fullName" className="col-sm-4 col-form-label form-label text-lg w-64">Full name  </label>
+                                            <label htmlfor="fullName" className="col-sm-4 col-form-label form-label text-lg w-64 name-time">Full name  </label>
                                             <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
                                                 <input type="text" className="form-control" placeholder="First name" id="fullName" required="" />
                                             </div>
@@ -214,7 +214,7 @@ class EventForm extends Component {
                                             </div>
                                         </div> */}
                                         <div className="mb-3 row basicinfo Time">
-                                            <label htmlfor="Timing" className="col-sm-4 col-form-label form-label text-lg w-64">Time</label>
+                                            <label htmlfor="Timing" className="col-sm-4 col-form-label form-label text-lg w-64 name-time">Time</label>
                                             <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
                                                 <input type="date" className="form-control" placeholder="date" id="date" required="" />
                                             </div>
