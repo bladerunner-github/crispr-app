@@ -13,6 +13,7 @@ class EventForm extends Component {
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.dashboard = this.dashboard.bind(this);
+        this.handleClick = this.handleClick(this)
     }
     handleChange(evt) {
         this.setState({
@@ -33,9 +34,14 @@ class EventForm extends Component {
         })
         const info = await response.text()
         console.log(info)
-        this.setState({ fname: '', lname: '', title: '', description: '', location: '', time: '', date: '', email: '', phone: null })
-    }
 
+    }
+    handleClick() {
+        this.setState({
+            fname: '', lname: '', title: '', description: '', location: '', time: ' ', date: '', email: '', phone: null
+        })
+        console.log(this.state)
+    }
     render() {
         const formDetails = this.state
         return (
@@ -175,16 +181,16 @@ class EventForm extends Component {
                                         <div className="mb-3 row basicinfo">
                                             <label htmlfor="Title of the event" className="col-sm-4 col-form-label form-label w-64">Title of the event</label>
                                             <div className="col-md-8 col-12 w-[39.6rem]">
-                                                <input type="text" className="form-control" placeholder="Title of the event" id="eventtitle" name='title' value={this.state.title} onChange={this.handleChange} />
+                                                <input type="text" className="form-control" placeholder="Title of the event" id="eventtitle" name='title' value={this.state.title} onChange={this.handleChange} required />
                                             </div>
                                         </div>
                                         <div className="mb-3 row basicinfo name-div">
                                             <label htmlfor="fullName" className="col-sm-4 col-form-label form-label text-lg w-64 name-time">Full name  </label>
                                             <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
-                                                <input type="text" className="form-control" placeholder="First name" id="fullName" name='fname' value={this.state.fname} onChange={this.handleChange} />
+                                                <input type="text" className="form-control" placeholder="First name" id="fullName" name='fname' value={this.state.fname} onChange={this.handleChange} required />
                                             </div>
                                             <div className="col-sm-4 ml-2 mr-2 mt-1 w-72 displaying">
-                                                <input type="text" className="form-control" placeholder="Last name" id="lastName" required="" name='lname' value={this.state.lname} onChange={this.handleChange} />
+                                                <input type="text" className="form-control" placeholder="Last name" id="lastName" required name='lname' value={this.state.lname} onChange={this.handleChange} />
                                             </div>
                                         </div>
                                         <div class="mb-3 row basicinfo">
@@ -196,7 +202,7 @@ class EventForm extends Component {
                                         <div className="mb-3 row basicinfo">
                                             <label className="col-sm-4 form-label w-64" htmlfor="country">Location</label>
                                             <div class="col-md-8 col-12  w-[39.6rem] ">
-                                                <input placeholder="Location" required="" type="text" id="Location" className="form-control" name='location' value={this.state.location} onChange={this.handleChange} />
+                                                <input placeholder="Location" required type="text" id="Location" className="form-control" name='location' value={this.state.location} onChange={this.handleChange} />
                                             </div>
                                         </div>
                                         {/* <div className="mb-3 row basicinfo">
@@ -213,22 +219,22 @@ class EventForm extends Component {
                                         <div className="mb-3 row basicinfo Time">
                                             <label htmlfor="Timing" className="col-sm-4 col-form-label form-label text-lg w-64 name-time">Time</label>
                                             <div className="col-sm-4 mb-3 mb-lg-0 mt-1 ml-2 mr-2 w-80 displaying">
-                                                <input type="date" className="form-control" placeholder="date" id="date" required="" name='date' value={this.state.date} onChange={this.handleChange} />
+                                                <input type="date" className="form-control" placeholder="date" id="date" required name='date' value={this.state.date} onChange={this.handleChange} />
                                             </div>
                                             <div className="col-sm-4 ml-2 mr-2 mt-1 w-72 displaying">
-                                                <input type="time" className="form-control" placeholder="time" id="time" required="" name='time' value={this.state.time} onChange={this.handleChange} />
+                                                <input type="time" className="form-control" placeholder="time" id="time" required name='time' value={this.state.time} onChange={this.handleChange} />
                                             </div>
                                         </div>
                                         <div className="mb-3 row basicinfo">
                                             <label htmlfor="email" className="col-sm-4 col-form-label form-label w-64">Email</label>
                                             <div className="col-md-8 col-12 w-[39.6rem]">
-                                                <input type="email" className="form-control" placeholder="Email" id="email" required="" name='email' value={this.state.email} onChange={this.handleChange} />
+                                                <input type="email" className="form-control" placeholder="Email" id="email" required name='email' value={this.state.email} onChange={this.handleChange} />
                                             </div>
                                         </div>
                                         <div className="mb-3 row basicinfo">
                                             <label className="col-sm-4 form-label  w-64" htmlfor="phone">Phone <span className="text-muted"></span></label>
                                             <div className="col-md-8 col-12  w-[39.6rem]">
-                                                <input placeholder="Enter Phone" type="number" id="phone" className="form-control" name='phone' value={this.state.phone} onChange={this.handleChange} />
+                                                <input placeholder="Enter Phone" type="number" id="phone" className="form-control" name='phone' value={this.state.phone} onChange={this.handleChange} required />
                                             </div>
                                         </div>
 
@@ -239,7 +245,7 @@ class EventForm extends Component {
                                                     {/* <input placeholder="Enter Zip code" required="" type="text" id="zipcode" className="form-control" /> */}
                                                 </div>
                                                 <div className="mt-0 col-md-8 col-12 offset-md-4 border-1">
-                                                    <button type="submit" className="btn btn-primary bg-blue-600 text-white text-xl hover:bg-blue-800 w-44">Save Changes</button>
+                                                    <button type="submit" className="btn btn-primary bg-blue-600 text-white text-xl hover:bg-blue-800 w-44" onClick={this.handleClick}>Save Changes</button>
                                                 </div>
                                             </div>
                                         </div>
