@@ -133,9 +133,17 @@ main {
     }
 
     .image-div {
+        /* border: 2px solid red; */
         margin-top: 0.2%;
-        max-width: 70%;
+        max-width: 100%;
+        width: 135%;
         margin-bottom: 3%;
+    }
+
+    .image-div img {
+        /* border: 2px solid black; */
+        max-width: 100%;
+        width: 100%;
     }
 
     .info-div {
@@ -168,6 +176,7 @@ main {
 
     .image-div {
         max-width: 60%;
+        /* border: 2px solid red; */
         /* Adjust the max-width as per your desired size */
         margin-bottom: 0;
     }
@@ -193,7 +202,9 @@ main {
     }
 
     .image-div {
-        max-width: 55%;
+        /* border: 2px solid red; */
+        max-width: 75%;
+        width: 100%;
         margin-top: 1%;
     }
 

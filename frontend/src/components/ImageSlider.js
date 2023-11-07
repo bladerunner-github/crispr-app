@@ -17,10 +17,10 @@ const ImageSlider = ({ slides }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 4000); 
+    const interval = setInterval(nextSlide, 4000);
 
     return () => {
-      clearInterval(interval); 
+      clearInterval(interval);
     };
   }, [current]);
 
@@ -30,7 +30,7 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className='slider'>
-      <div className='container'>
+      <div className='containers'>
         <button className=' left-arrow' onClick={prevSlide} >
           <img src={leftarrow} alt='left-arrow' width={14} height={16}></img>
         </button>
