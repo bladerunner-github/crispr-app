@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Review Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Amazon Review Analyzer</h1>
+    <div class="input-container">
+        <label for="product-url">Enter Amazon Product URL:</label>
+        <input type="text" id="product-url" placeholder="https://www.amazon.com/product-url">
+        <button id="analyze-button">Analyze Reviews</button>
+    </div>
+    <div id="reviews-container" class="hidden">
+        <h2>Reviews:</h2>
+        <ul id="reviews-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.input-container {
+    margin: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#reviews-container {
+    margin: 20px;
+    text-align: left;
+}
+
+#reviews-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const analyzeButton = document.getElementById('analyze-button');
+    const reviewsContainer = document.getElementById('reviews-container');
+    const reviewsList = document.getElementById('reviews-list');
+    
+    analyzeButton.addEventListener('click', () => {
+        const productUrl = document.getElementById('product-url').value;
+        
+        // In a real application, you would send the product URL to the server for analysis.
+        // Here, we simulate retrieving reviews and displaying them.
+        
+        // Simulated reviews (replace this with actual API calls)
+        const simulatedReviews = [
+            "This product is excellent!",
+            "I'm very satisfied with my purchase.",
+            "Not worth the money. Poor quality.",
+        ];
+        
+        // Clear existing reviews
+        reviewsList.innerHTML = '';
+        
+        // Display the reviews
+        simulatedReviews.forEach((reviewText) => {
+            const reviewItem = document.createElement('li');
+            reviewItem.textContent = reviewText;
+            reviewsList.appendChild(reviewItem);
+        });
+        
+        reviewsContainer.classList.remove('hidden');
+    });
+});
+
+</script>
