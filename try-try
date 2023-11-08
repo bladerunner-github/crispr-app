@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Set the size of the chessboard (even number)
+board_size=8
+
+# Loop through rows
+for ((i = 1; i <= board_size; i++)); do
+    # Loop through columns
+    for ((j = 1; j <= board_size; j++)); do
+        # Determine the character to print based on the position
+        if (( (i + j) % 2 == 0 )); then
+            printf "\e[47m  "  # White square
+        else
+            printf "\e[40m  "  # Black square
+        fi
+    done
+    printf "\e[0m\n"  # Reset color and move to the next line
+done
