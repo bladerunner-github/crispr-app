@@ -31,6 +31,9 @@ class Navbar extends Component {
             <li>
               <Link to="/contact"> Buzzer </Link>
             </li>
+   <li>
+            <Link to="/OurTeam">Our Team</Link>
+            </li>
             <li>
               <Link to="./login">
                 <div className="login">
