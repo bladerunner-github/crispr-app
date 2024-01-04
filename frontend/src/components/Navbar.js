@@ -29,7 +29,7 @@ class Navbar extends Component {
               <Link to="/">Upcoming Events </Link>
             </li>
             <li>
-              <Link to="/"> Article </Link>
+              <Link to="/about"> Article </Link>
             </li>
             <li>
               <Link to="./login">
