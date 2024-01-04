@@ -11,18 +11,19 @@ import Contact from "./pages/Contact";
 import NavbarLoggedIn from "./components/navbarmoderator";
 import NavbarLoggedOut from "./components/Navbar";
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import LoginForm from "./components/login"; // Import your LoginForm component
 import EventForm from "./EventForm";
 import EventPage from "./EventPage";
 import Approval from "./Approval";
 import Blog from "./components/Blog";
 import Banner from "./components/Banner";
-import ImageSlider from './components/ImageSlider';
+import ImageSlider from "./components/ImageSlider";
 import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
-import SliderData from './components/SliderData';
+import SliderData from "./components/SliderData";
+import Urgentsupport from "./components/Urgentsupport";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -52,7 +53,6 @@ function App() {
   const location = useLocation(); // Get the current location
   return (
     <div className="App">
-
       {/* Conditionally render the Navbar based on authentication */}
       {isLoggedIn ? (
         // Render Navbar for logged-in users
@@ -71,17 +71,18 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/event-table" element={<EventListTable />} />
-
+        <Route path="/Urgent-support" element={<Urgentsupport />} />
         <Route
           path="/login"
-          element={<LoginForm
-            onLogin={handleLogin}
-            onLogout={handleLogout}
-            isAuthenticated={isLoggedIn}
-          />} // Pass handleLogin as a prop
+          element={
+            <LoginForm
+              onLogin={handleLogin}
+              onLogout={handleLogout}
+              isAuthenticated={isLoggedIn}
+            />
+          } // Pass handleLogin as a prop
         />
       </Routes>
-
 
       {/* <ImageSlider slides={SliderData} />
       <Banner />
@@ -93,7 +94,6 @@ function App() {
       </div> */}
       {location.pathname === "/" ? (
         <>
-
           <ImageSlider slides={SliderData} />
           <Banner />
           <div className="all-blogs">
@@ -109,5 +109,3 @@ function App() {
 }
 
 export default App;
-
-

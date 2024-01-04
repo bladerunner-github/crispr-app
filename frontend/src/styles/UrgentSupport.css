@@ -1,0 +1,40 @@
+.image-divs{
+    /* box-shadow: 5% 5% 5% rgb(26, 23, 23); */
+    /* background-image: url(https://www.filepicker.io/api/file/6tXGehKbQ3q4dfBl2LRi); */
+    position: relative;
+    padding-top: 20rem;
+    padding-bottom: 17rem;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(49, 63, 84, 0.7) !important;
+}
+.image-divs::after {
+    content: " ";
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://www.filepicker.io/api/file/6tXGehKbQ3q4dfBl2LRi);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; 
+  } 
+  .assistance{
+    border: 2px solid red;
+    width: 33%;
+    margin: 5%;
+  }
+  .services{
+    border: 2px solid blue;
+width: 33%;
+margin: 5%;
+  }
+  .contactss{
+    border: 2px solid yellow;
+    width: 33%;
+    margin: 5%;
+  }
+.slantedimage{
+    /* transform: skewY(-0.5deg); */
+}
