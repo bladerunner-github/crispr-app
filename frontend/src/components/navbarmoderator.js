@@ -29,7 +29,7 @@ class Navbar extends Component {
               <Link to="/Form"> Events creation </Link>
             </li>
             <li>
-              <Link to="/Approval"> Events approval </Link>
+              <Link to="/event-table"> Events approval </Link>
             </li>
             <li>
               <Link to="/About"> Article approval </Link>

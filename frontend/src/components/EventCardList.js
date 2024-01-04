@@ -96,7 +96,7 @@ class Item extends Component
         const className = 'item level' + this.props.level
         return(
             <div className={className}>
-                <EventCardIcon/>
+                <EventCardIcon />
             </div>
         )
     }

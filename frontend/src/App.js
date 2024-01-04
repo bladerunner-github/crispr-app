@@ -21,8 +21,8 @@ import Banner from "./components/Banner";
 import ImageSlider from './components/ImageSlider';
 import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
-import EventCard from "./components/EventCardIcon";
 import SliderData from './components/SliderData';
+import EventCardIcon from "./components/EventCardIcon";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -71,7 +71,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/event-table" element={<EventListTable />} />
-
+        <Route path="/event-cards" element={<EventCardList />} />
         <Route
           path="/login"
           element={<LoginForm
@@ -95,6 +95,7 @@ function App() {
         <>
 
           <ImageSlider slides={SliderData} />
+          <EventCardList items={items} active={0} />
           <Banner />
           <div className="all-blogs">
             <Blog />
