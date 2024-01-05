@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Buzzer_Popup from './Buzzer_Popup';
 import buzzer_icon from "../assets/buzzer_icon.png"
+import "../styles/Buzzer.css";
 
 function Buzzer_btn() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,9 @@ function Buzzer_btn() {
     </div>
     {/* <button className='buzzer_btn' onClick={togglePopup} >Buzzer</button> */}
 
-    {isOpen && <Buzzer_Popup
+    {/* {isOpen && <Buzzer_Popup
       handleClose={togglePopup}
-    />}
+    />} */}
   </div>
 }
 

@@ -47,29 +47,54 @@ const LoginForm = (props) => {
 
       {props.isAuthenticated ? (
         <div className="logout-container">
-          <p>Do you want to Logout, {username}</p>
+          <div className="logout_page">
+          <p className="confirmation">Confirm Logout ? {username}</p>
+          <div className="logout-btn">
           <button onClick={handleLogout} className="logout-button">Logout</button>
+          </div>
+          </div>
         </div>
       ) : (
-        <form className="login-form">
-          <h1>Login</h1>
+        <div className="login-container">
+          <div class="login_page">
+            <span class="fas fa-sign-in-alt" aria-hidden="true"></span>
+            <strong className="welcome">Welcome!</strong>
+            <span>Sign in to your account</span>
 
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button className="login-btn" onClick={handleLogin}>
-            Login
-          </button>
-        </form>
+            <form action="#" method="post" class="login-form">
+              <fieldset>
+                <div class="form">
+                  <div class="form-row">
+                    <span class="fas fa-user" aria-hidden="true"></span>
+                    <label class="form-label" for="input">UserName</label>
+                    <input type="text"
+                      placeholder="=>"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)} class="form-text"></input>
+                  </div>
+                  <div class="form-row">
+                    <span class="fas fa-eye" aria-hidden="true"></span>
+                    <label class="form-label" for="input">Password</label>
+                    <input type="password"
+                      placeholder="=>"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)} class="form-text"></input>
+                  </div>
+                  {/* <div class="form-row bottom">
+                    <div class="form-check">
+                      <input type="checkbox" id="remember" name="remember" value="remember"></input>
+                      <label for="remember"> remember me</label>
+                    </div>
+                    <a href="#url" class="forgot">forgot password?</a>
+                  </div> */}
+                  <div class="form-row button-login">
+                    <button class="button btn-login" onClick={handleLogin}>Login </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       )}
 
       {showPopup && (

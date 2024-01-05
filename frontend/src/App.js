@@ -23,6 +23,7 @@ import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import SliderData from './components/SliderData';
 import EventCardIcon from "./components/EventCardIcon";
+import Buzzer_Form from "./components/Buzzer_Form";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
             isAuthenticated={isLoggedIn}
           />} // Pass handleLogin as a prop
         />
+        <Route path="/Buzzer_Form" element={<Buzzer_Form />} />
       </Routes>
 
 

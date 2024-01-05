@@ -33,10 +33,13 @@ class Buzzer_Form extends Component {
   };
 
   render() {
-    return (
+    return (<section>
+     
+      <div className="form-title">Form Title</div>
       <div className="form_container">
-        <form onSubmit={this.handleSubmit}>
-          <div>
+        <form className="form" onSubmit={this.handleSubmit}>
+          
+          <div className="input-box">
             <label>Name:</label>
             <input
               type="text"
@@ -47,7 +50,7 @@ class Buzzer_Form extends Component {
             />
           </div>
 
-          <div>
+          <div className="input-box">
             <label>Roll Number:</label>
             <input
               type="text"
@@ -58,7 +61,7 @@ class Buzzer_Form extends Component {
             />
           </div>
 
-          <div>
+          <div className="input-box">
             <label>Phone Number:</label>
             <input
               type="tel"
@@ -69,7 +72,7 @@ class Buzzer_Form extends Component {
             />
           </div>
 
-          <div>
+          <div className="input-box">
             <label>Upload Picture:</label>
             <input
               type="file"
@@ -79,13 +82,13 @@ class Buzzer_Form extends Component {
             />
           </div>
 
-          <div>
+          <div className="input-box">
             <label>Message:</label>
-            <textarea
-              name="message"
+            <br></br>
+           
+            <input type="textarea" name="message"
               value={this.state.message}
-              onChange={this.handleChange}
-            ></textarea>
+              onChange={this.handleChange}></input>
           </div>
 
           <div>
@@ -93,6 +96,7 @@ class Buzzer_Form extends Component {
           </div>
         </form>
       </div>
+      </section>
     );
   }
 }
