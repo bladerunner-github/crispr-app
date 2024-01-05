@@ -1,126 +1,130 @@
+/* ourteam.css */
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-  }
-  
-  .our-team-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2em;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.our-team-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.column {
+  flex: 1; /* Adjusted flex property to take up full width */
+  padding: 0.5em;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: #0b080d;
+  margin-bottom: 1em;
+}
+
+.faculty-rep { /* Adjusted class name */
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 1em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #efe6e6;
+  margin: 0.5em;
+  max-width: 290px;
+  border: 2px solid #7f28cc;
+}
+
+.faculty-rep:hover { /* Adjusted class name */
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.3);
+  border: 2px solid #8567f7;
+}
+
+.faculty-rep .img-container { /* Adjusted class name */
+  width: 5em;
+  height: 5em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-rep img { /* Adjusted class name */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.faculty-rep h3 { /* Adjusted class name */
+  font-weight: 500;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.faculty-rep p { /* Adjusted class name */
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0.5em 0 1em 0;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faculty-rep a { /* Adjusted class name */
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.faculty-rep:hover { /* Adjusted class name */
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 600px) {
   .column {
-    flex: 0 0 30%; /* Adjusted flex property to accommodate three columns */
-    padding: 0.5em;
+    flex: 0 0 30%;
+    max-width: 30%;
   }
-  
-  .heading {
-    width: 100%;
-    text-align: center;
-    font-size: 4.5em;
-    color: #7f28cc;
-    margin-bottom: 1em;
+
+  .row {
+    justify-content: space-around;
   }
-  
-  .card {
-    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
-    padding: 3em 1em;
-    border-radius: 0.6em;
-    color: #1f003b;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: #da3c3c;
-    margin: 0.5em;
-    max-width: 300px;
-    border: 5px solid #7f28cc; /* Add border style, width, and color */
+}
+
+@media screen and (min-width: 992px) {
+  .column {
+    flex: 0 0 48%;
+    max-width: 48%;
   }
-  
-  .card:hover {
-    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.3);
-    border: 2px solid #8567f7; /* Adjusted border color on hover */
-  }
-  .card .img-container {
-    width: 10em;
-    height: 10em;
-    background-color: #a993ff;
-    padding: 0.5em;
-    border-radius: 50%;
-    margin: 0 auto 2em auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 100%;
-  }
-  
-  .card h3 {
-    font-weight: 500;
-    margin-top: 1em;
-    font-size: 1.5em;
-  }
-  
-  .card p {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0.5em 0 2em 0;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-  }
-  
-  .icons {
-    width: 50%;
-    min-width: 180px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .card a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.4em;
-  }
-  
-  .card:hover {
-    background: linear-gradient(#6045ea, #8567f7);
-    color: #ffffff;
-    transform: scale(1.05);
-  }
-  
-  @media screen and (min-width: 768px) {
-    .our-team-container {
-      padding: 2em 1em;
-    }
-    .row {
-      justify-content: space-around;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .our-team-container {
-      padding: 3em;
-    }
-    .column {
-      flex: 0 0 48%;
-      max-width: 48%;
-    }
-  }
-  
-  
+}
+
+
+
