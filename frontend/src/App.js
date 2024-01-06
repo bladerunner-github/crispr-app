@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import HomeUser from "./pages/homeuser";
 import Menu from "./pages/Menu";
 import About from "./pages/Article";
+import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
 import NavbarLoggedIn from "./components/navbarmoderator";
 import NavbarLoggedOut from "./components/Navbar";
@@ -21,6 +22,7 @@ import Banner from "./components/Banner";
 import ImageSlider from './components/ImageSlider';
 import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
+import EventCard from "./components/EventCardIcon";
 import SliderData from './components/SliderData';
 import EventCardIcon from "./components/EventCardIcon";
 import Newsletter from "./components/newsletter";
@@ -74,6 +76,8 @@ function App() {
         <Route path="/event-table" element={<EventListTable />} />
         <Route path="/event-cards" element={<EventCardList />} />
         <Route path="/newsletter" element = {<Newsletter/>}/>
+        <Route path="/OurTeam" element={<OurTeam />} />
+
         <Route
           path="/login"
           element={<LoginForm
@@ -97,7 +101,6 @@ function App() {
         <>
 
           <ImageSlider slides={SliderData} />
-          <EventCardList items={items} active={0} />
           <Banner />
           <div className="all-blogs">
             <Blog />
