@@ -1,23 +1,59 @@
 import React from 'react';
-import '../styles/ourteam.css';
-import PP from '../assets/pp.jpeg'; // Make sure the path to your image is correct
+import '../styles/ourteam.css'; // Adjust the path based on your project structure
+import PP from '../assets/pp.jpeg';
 
 const TeamSection = () => {
   return (
-    <section>
+    <div className="container">
       <div className="row">
-        <h1 className="heading">Our Team</h1>
+        <div className="col-md-12 col-sm-12">
+          <h1 className="heading" align="center"><b>Faculty Coordinator</b></h1>
+        </div>
       </div>
-      <div className="row">
-        {/* Member 1 */}
-        <div className="column">
-          <div className="card">
-            <div className="img-container">
-              <img src={PP} alt="Luna Turner" />
+
+      <div className="row faculty-row">
+        <div className="col-md-12 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="Dr. Somnath Maji" />
             </div>
-            <h3>Ajinkya Muley</h3>
-            <p>Developer</p>
-            <div className="icons">
+            <br />
+            <div className="details">
+              <p>Dr. Mayur Parate</p>
+              <div className="icons">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-linkedin"></i>
+              </a>
+             
+              <a href="mailto:luna@example.com">
+                <i className="fas fa-envelope"></i>
+              </a>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-md-12 col-sm-12">
+          <h1 className="heading" align="center"><b>Developer</b></h1>
+        </div>
+      </div>
+
+      <div className="row faculty-row">
+        {/* First Counsellor */}
+        <div className="col-md-4 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="Maria Morris" />
+            </div>
+            <div className="details">
+              <p>Ajinkya Muley</p>
+              <div className="icons">
               <a href="#">
                 <i className="fab fa-twitter"></i>
               </a>
@@ -31,114 +67,137 @@ const TeamSection = () => {
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
+            </div>
           </div>
         </div>
 
-        {/* Member 2 */}
-        <div className="column">
-          <div className="card">
-            <div className="img-container">
-              <img src={PP} alt="Bryant Hall" />
+        {/* Second Counsellor */}
+        <div className="col-md-4 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="Yukti Rastogi" />
             </div>
-            <h3>Raghav Gupta</h3>
-            <p>Developer</p>
-            <div className="icons">
+            <div className="details">
+              <p>Raghav Gupta</p>
+              <div className="icons">
               <a href="#">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/bryanthall" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/lunaturner" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="mailto:bryant@example.com">
+              <a href="mailto:luna@example.com">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
+            </div>
           </div>
         </div>
+        
 
-        {/* Member 3 */}
-        <div className="column">
-          <div className="card">
-            <div className="img-container">
-              <img src={PP} alt="Hope Watkins" />
+        {/* Third Counsellor */}
+        <div className="col-md-4 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="D. Phani Bhushan" />
             </div>
-            <h3>Kushagra Srivastava</h3>
-            <p>Developer</p>
-            <div className="icons">
+            <div className="details">
+              <p>Kushagra Srivastava</p>
+              <div className="icons">
               <a href="#">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/hopewatkins" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/lunaturner" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="mailto:hope@example.com">
+              <a href="mailto:luna@example.com">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
+            </div>
           </div>
         </div>
+        
+      </div>
+      <div className="row">
+        <div className="col-md-12 col-sm-12">
+         
+        </div>
+      </div>
 
-        {/* Member 4 */}
-        <div className="column">
-          <div className="card">
-            <div className="img-container">
-              <img src={PP} alt="John Doe" />
+      <div className="row faculty-row">
+        {/* First Counsellor */}
+        <div className="col-md-4 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="Maria Morris" />
             </div>
-            <h3>Tanay Pandey</h3>
-            <p>Developer</p>
-            <div className="icons">
+            <div className="details">
+              <p>Shivendra Tripathi</p>
+              <div className="icons">
               <a href="#">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/lunaturner" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="mailto:john@example.com">
+              <a href="mailto:luna@example.com">
                 <i className="fas fa-envelope"></i>
               </a>
+            </div>
             </div>
           </div>
         </div>
 
-        {/* Member 5 */}
-        <div className="column">
-          <div className="card">
-            <div className="img-container">
-              <img src={PP} alt="Emily White" />
+        {/* Second Counsellor */}
+        <div className="col-md-4 col-sm-12">
+          <div className="faculty-rep less-height">
+            <div className="faculty-image">
+              <img src={PP} alt="Yukti Rastogi" />
             </div>
-            <h3>Shivendra Tripathi</h3>
-            <p>Developer</p>
-            <div className="icons">
+            <div className="details">
+              <p>Tanay Pandey</p>
+              <div className="icons">
               <a href="#">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/lunaturner" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="mailto:john@example.com">
+              <a href="mailto:luna@example.com">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
+            </div>
           </div>
         </div>
-        </div>
-        </section>
+        
+
+        
+          
+        
+        
+      </div>
+    </div>
   );
 };
 
 export default TeamSection;
+
+
+
 
 
 
