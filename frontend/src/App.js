@@ -23,6 +23,7 @@ import EventListTable from "./pages/EventListTable";
 import EventCardList from "./components/EventCardList";
 import SliderData from './components/SliderData';
 import EventCardIcon from "./components/EventCardIcon";
+import Newsletter from "./components/newsletter";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/event-table" element={<EventListTable />} />
         <Route path="/event-cards" element={<EventCardList />} />
+        <Route path="/newsletter" element = {<Newsletter/>}/>
         <Route
           path="/login"
           element={<LoginForm

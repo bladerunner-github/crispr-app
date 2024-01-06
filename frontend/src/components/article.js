@@ -5,8 +5,8 @@ function MenuItem({ image, name, author, linkTo }) {
   return (
     <div className="menuItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
-      <h1> {name} </h1>
-      <h3>{author}</h3> <div className="button-container">
+      <p style={{fontWeight:600}}> {name} </p>
+      <p>{author}</p> <div className="button-container">
       <Link to={linkTo} className="button-link">
         Go to Page
       </Link> </div>

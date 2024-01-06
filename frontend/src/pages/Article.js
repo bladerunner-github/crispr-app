@@ -24,6 +24,7 @@ function About() {
                   image={menuItem.image}
                   name={menuItem.name}
                   author={menuItem.author}
+                  linkTo={menuItem.link}
                 />
               );
             })}
