@@ -9,6 +9,17 @@ $book-border: 1px solid $book-color-border;
 }
 
 // LOL CSS
+
+@media (min-width: 701px) {
+  .small-table {
+    display: none; /* Hide small table on larger screens */
+  }
+}
+@media (max-width: 700px) {
+  .large-table {
+    display: none; /* Hide large table on smaller screens */
+  }
+}
 body,
 html {
   width: 100%;
@@ -18,7 +29,7 @@ html {
 }
 
 body {
-  background: #fde3a7;
+  // background: #fde3a7;
 }
 
 ul {
@@ -46,8 +57,8 @@ ul {
 
   cursor: pointer;
   display: block;
-  width: 150px;
-  height: 220px;
+  width: 12rem;
+  height: 15em;
   position: relative;
   background: $book-color-bg; 
   z-index: 1;

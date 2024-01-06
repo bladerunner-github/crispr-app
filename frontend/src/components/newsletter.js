@@ -36,21 +36,21 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 function createData(
-imgUrl,
-bookUrl
+  imgUrl,
+  bookUrl
 ) {
   return { imgUrl, bookUrl };
 }
 
 const rows = [
-  createData(Edition4,"https://pubhtml5.com/qjgde/mtxa/"),
-  createData(Edition3,"https://online.pubhtml5.com/qjgde/byun/"),
-  createData(Edition2,"https://pubhtml5.com/qjgde/aons/"),
+  createData(Edition4, "https://pubhtml5.com/qjgde/mtxa/"),
+  createData(Edition3, "https://online.pubhtml5.com/qjgde/byun/"),
+  createData(Edition2, "https://pubhtml5.com/qjgde/aons/"),
 ];
 
-export default function CustomizedTables() {
+function largeTable() {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className='large-table'>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -62,21 +62,93 @@ export default function CustomizedTables() {
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
               <StyledTableCell component="th" scope="row">
-                <center>              
-                <li class='book'>
-                  <img src={row.imgUrl} />
-                </li>
+                <center>
+                  <li class='book'>
+                    <img src={row.imgUrl} />
+                  </li>
                 </center>
               </StyledTableCell>
               {/* <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
+            <StyledTableCell align="right">{row.fat}</StyledTableCell>
+            <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+            <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
               <StyledTableCell><a href={row.bookUrl}>Click To Read</a></StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
+  )
+
+}
+
+const smallTable = () => {
+  return (
+    <TableContainer component={Paper} className='small-table'>
+      <Table sx={{ minWidth: 200 }} aria-label="customized table">
+        <TableHead>
+          <TableRow>
+            <StyledTableCell>Campus Pulse Edition</StyledTableCell>
+            <StyledTableCell></StyledTableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <StyledTableRow key={row.name}>
+              <StyledTableCell component="th" scope="row">
+                <center>
+                  <li class='book'>
+                    <img src={row.imgUrl} />
+                  </li>
+                </center>
+              </StyledTableCell>
+              {/* <StyledTableCell align="right">{row.calories}</StyledTableCell>
+            <StyledTableCell align="right">{row.fat}</StyledTableCell>
+            <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+            <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
+              <StyledTableCell><a href={row.bookUrl}>Click To Read</a></StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  )
+}
+
+export default function CustomizedTables() {
+  const isLargeScreen = window.innerWidth > 700;
+  return (
+    <div>
+      {largeTable()}
+      {smallTable()}
+    </div>
+    // <TableContainer component={Paper}>
+    //   <Table sx={{ minWidth: 700 }} aria-label="customized table">
+    //     <TableHead>
+    //       <TableRow>
+    //         <StyledTableCell>Campus Pulse Edition</StyledTableCell>
+    //         <StyledTableCell></StyledTableCell>
+    //       </TableRow>
+    //     </TableHead>
+    //     <TableBody>
+    //       {rows.map((row) => (
+    //         <StyledTableRow key={row.name}>
+    //           <StyledTableCell component="th" scope="row">
+    //             <center>              
+    //             <li class='book'>
+    //               <img src={row.imgUrl} />
+    //             </li>
+    //             </center>
+    //           </StyledTableCell>
+    //           {/* <StyledTableCell align="right">{row.calories}</StyledTableCell>
+    //           <StyledTableCell align="right">{row.fat}</StyledTableCell>
+    //           <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+    //           <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
+    //           <StyledTableCell><a href={row.bookUrl}>Click To Read</a></StyledTableCell>
+    //         </StyledTableRow>
+    //       ))}
+    //     </TableBody>
+    //   </Table>
+    // </TableContainer>
   );
 }
