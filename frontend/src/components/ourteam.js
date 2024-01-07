@@ -4,6 +4,7 @@ import PP from '../assets/pp.jpeg';
 
 const TeamSection = () => {
   return (
+    <div className="container2">
     <div className="container">
       <div className="row">
         <div className="col-md-12 col-sm-12">
@@ -190,6 +191,7 @@ const TeamSection = () => {
         
         
       </div>
+    </div>
     </div>
   );
 };
