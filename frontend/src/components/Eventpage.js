@@ -16,15 +16,16 @@ class Eventpage extends Component {
         <section className="main-section">
           <div className="image-div">
             <img src={imgURL} alt="insider" />
-            <br />
+            {/* <br />
             <h2>
               <u>About</u>
             </h2>
             <br />
-            {about}
+            {about} */}
           </div>
           <div className="info-div">
             <div className="title">Title : {title}</div>
+            <div className="about">About : {about}</div>
             <div className="date">
               <div className="dateimage">
                 {" "}

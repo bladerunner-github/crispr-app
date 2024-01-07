@@ -64,7 +64,7 @@ class EventForm extends Component {
   render() {
     const formDetails = this.state;
     return (
-      <div className="p-6 container-fluid main">
+      <div className="p-6 container-fluid main1">
         {/* <form onSubmit={this.handleSubmit} method='POST'>
                     <label htmlFor='name' className=' bg-black caret-yellow-400'>Name</label>
                     <input type='text' name='name' id='name' value={this.state.name} onChange={this.handleChange} />
@@ -118,7 +118,7 @@ class EventForm extends Component {
         <hr /> */}
         {/* first row ends */}
         {/* second row starts */}
-        <div className="mb-8 row mt-1  flex flex-row w-full overall-card ">
+        <div className="mb-8 row mt-1  flex flex-row w-full overall-card">
           {/* <div className="hidden-menubar mt-3">
             {" "}
             <div className="dash col-xl-3 col-lg-4 col-md-12 col-12 mr-6 w-[22rem] h-[90%]  ml-3 bg-[#212b36] flex flex-col">

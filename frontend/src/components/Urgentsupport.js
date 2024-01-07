@@ -1,78 +1,142 @@
-import React, { Component } from "react";
+import React from "react";
 import "./../styles/UrgentSupport.css";
-import pic from "./../assets/xyz.jpg";
-class Urgentsupport extends Component {
-  render() {
-    return (
-      <div>
-        <div className="image-divs h-50%">
-          {/* <div>Nedkjbdf</div> */}
-          <div class="col-xs-6 col-xs-offset-3 col text-container">
-            <h2 className="font-bold text-[3.6rem]">Contact&nbsp;Us</h2>
-            <p className="text-white text-xl font-semibold">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-              <br /> Lorem Ipsum has been the industry's standard dummy text
-              <br /> ever since the 1500s, when an unknown printer <br />
-              galley of type and scrambled it to make
-              <br /> a type specimen book.
-            </p>
-          </div>
-          {/* <h1>Need an Urgent support Please</h1> */}
-          {/* <img
-            src="https://www.filepicker.io/api/file/6tXGehKbQ3q4dfBl2LRi"
-            alt=""
-            className="w-[97%] ml-7 mt-5 slantedimage"
-          /> */}
-        </div>
-        <div className="flex flex-row">
-          <div className="contactimage1 border-2 border-blue-800 w-[19.8rem] mt-7 ml-4">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV2XZO_OCBZFc4TMxGkX43Hqe0zYD9BQM7pWjp1s8VmFj7oEgwjAaOErSKU1glu4DLdOk&usqp=CAU"
-              alt=""
-              className=" w-full"
-            />
-          </div>
-          <div className="border border-black w-[60%] mt-7 ml-20">
-            <table className="mt-5">
-              <tr>
-                <td className="text-[2.4rem] text-black assistance mr-3">
-                  Kind of Assistance
-                </td>
-                <td className="text-[2.4rem] text-black services">
-                  <p className="m-auto border-2 border-black w-[50%]">
-                    Service
-                  </p>
-                </td>
-                <td className="text-[2.4rem] text-black contactss">
-                  {" "}
-                  <p className="m-auto border-2 border-black w-[50%]">
-                    contact
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>Health Emergency</td>
-                <td>Hospital</td>
-                <td>T:05414-25050 M:291343242</td>
-              </tr>
-              <tr>
-                <td>crisis</td>
-                <td>Ambulance</td>
-                <td>T:101</td>
-              </tr>
-              <tr>
-                <td>Quick Response</td>
-                <td>Security</td>
-                <td>shashik:398532985</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div>loremlwenfoawenfsk</div>
-      </div>
-    );
-  }
-}
+import Urgentlargescreen from "./Urgentlargescreen";
+import Urgentsmallscreen from "./Urgentsmallscreen";
 
-export default Urgentsupport;
+const UrgentSupport = () => {
+  return (
+    <div className="backimage">
+      {/* Contact Address Area */}
+      <section className="contact-address-area">
+        <div className="container  border-blue-800 ">
+          <div className="sec-title-style1 text-center max-width">
+            <div className="title">Urgent Support</div>
+            <div className="text">
+              <div className="decor-left">
+                <span></span>
+              </div>
+              <p>24 * 7 Emergency Lines</p>
+              <div className="decor-right">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div className="contact-address-box row">
+            {/* Single Contact Address Box */}
+            <div className="col-sm-12 col-md-4 single-contact-address-box text-center div1">
+              {/* <div className="icon-holder">
+                <span className="icon-clock-1"></span>
+              </div>
+              <h3>Lorem Ipsum</h3>
+              <h2>Lorem Ipsum is simply dummy</h2> */}
+              <table>
+                <tbody>
+                  <tr className="mt-4">
+                    <td className="text-white text-xl font-semibold mt-3">
+                      Kind Of Assistance
+                    </td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                  <tr className="mt-4">
+                    <td className="text-white text-xl font-semibold mt-3">
+                      Service
+                    </td>
+                    <td className="text-white ml-2">Hospital</td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                  <tr className="mt-4">
+                    <td className="text-white text-xl font-semibold mt-3">
+                      Contact
+                    </td>
+                    <td className="text-white ml-2">
+                      T: 022-2567051/53 M: 9920147050
+                    </td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {/* End Single Contact Address Box */}
+            {/* Single Contact Address Box */}
+            <div className="col-sm-12 col-md-4 single-contact-address-box main-branch div2">
+              <h3>Lorem Ipsum</h3>
+              <div class="inner">
+                <ul>
+                  <li>
+                    <div class="title">
+                      <h4>Address:</h4>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Lorem Ipsum, 40C, Lorem Ipsum dummy,
+                        <br /> Lorem Ipsum, Ch 98054
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h4>Ph & Fax:</h4>
+                    </div>
+                    <div class="text">
+                      <p>
+                        +123 456 789 <br /> test@info.com
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">
+                      <h4>Office Hrs:</h4>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Mon-Fri: 9:30am - 6:30pm
+                        <br /> Sat-Sun: Closed
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* End Single Contact Address Box */}
+            {/* Single Contact Address Box */}
+            <div className="col-sm-12 col-md-4 single-contact-address-box text-center div1">
+              <table className="mt-1 center">
+                <tbody>
+                  <tr className="mt-4">
+                    <td className="text-white text-2xl font-semibold mt-3">
+                      Kind Of Assistance
+                    </td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                  <tr className="mt-4">
+                    <td className="text-white text-2xl font-semibold mt-3">
+                      Service
+                    </td>
+                    <td className="text-white ml-2">Hospital</td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                  <tr className="mt-4">
+                    <td className="text-white text-2xl font-semibold mt-3">
+                      Contact
+                    </td>
+                    <td className="text-white ml-2">
+                      T: 022-2567051/53 M: 9920147050
+                    </td>
+                    <td className="text-white ml-2">Health Emergency</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {/* End Single Contact Address Box */}
+          </div>
+
+          {/*new triple box */}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default UrgentSupport;
