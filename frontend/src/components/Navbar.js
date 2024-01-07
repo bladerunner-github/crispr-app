@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../assets/CRISPR_white.png";
+import Logo from "../assets/MANAS_yellow1.png";
 import { Link } from "react-router-dom";
 import login_img from "../assets/user-login.png"
 
