@@ -24,6 +24,7 @@ import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
 import SliderData from './components/SliderData';
 import { AboutUs } from "./pages/AboutUs";
+import AboutUsSnippet from "./components/AboutUsSnippet";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -103,6 +104,7 @@ function App() {
             <Blog />
             <Blog />
           </div>
+          <AboutUsSnippet />
         </>
       ) : null}
       <Footer />

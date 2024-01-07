@@ -39,6 +39,7 @@ function Home() {
         <Blog />
         <Blog />
       </div>
+    
     </div>
   );
 }

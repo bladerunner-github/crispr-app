@@ -1,37 +1,44 @@
 import React from "react";
 import "../styles/AboutUsPage.css";
-export const AboutUs = () => {
-  function fok() {
+export const AboutUs = () => 
+{
+  function fok() 
+  {
     var j = document.getElementById("arr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/premium/png-64-thumb/chevron-arrow-3883460-3231250.png)";
   }
 
-  function kof() {
+  function kof() 
+  {
     var j = document.getElementById("arr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/free/png-64/right-arrow-1438234-1216195.png)";
   }
 
-  function gok() {
+  function gok() 
+  {
     let j = document.getElementById("brr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/premium/png-64-thumb/chevron-arrow-3883460-3231250.png)";
   }
 
-  function kog() {
+  function kog() 
+  {
     let j = document.getElementById("brr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/free/png-64/right-arrow-1438234-1216195.png)";
   }
 
-  function hok() {
+  function hok() 
+  {
     let j = document.getElementById("crr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/premium/png-64-thumb/chevron-arrow-3883460-3231250.png)";
   }
 
-  function koh() {
+  function koh() 
+  {
     let j = document.getElementById("crr");
     j.style.backgroundImage =
       "url(https://cdn.iconscout.com/icon/free/png-64/right-arrow-1438234-1216195.png)";
@@ -47,23 +54,28 @@ export const AboutUs = () => {
   //   ilake.style.position = "sticky";
   // }
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", () => 
+  {
     var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
+    for (var i = 0; i < reveals.length; i++) 
+    {
       var wnd = window.innerHeight;
       var rtop = reveals[i].getBoundingClientRect().top;
       var rpoint = 100;
 
-      if (rtop < wnd - rpoint) {
+      if (rtop < wnd - rpoint) 
+      {
         reveals[i].classList.add("active");
-      } else {
+      } 
+      else 
+      {
         reveals[i].classList.remove("active");
       }
     }
   });
 
   return (
-    <div classNameName="App">
+    <div classNameName="AboutUs">
       <main>
         <div id="front">
           <h1 style={{ textAlign: "center" }}>About Us</h1>
@@ -189,7 +201,7 @@ export const AboutUs = () => {
         </div>
 
         <div id="second" className="reveal">
-          <div className="container">
+          <div className="container-au">
             <div>
               <h1>What's the Scoop:</h1>
               <h2>
@@ -205,7 +217,7 @@ export const AboutUs = () => {
               alt=""
             />
           </div>
-          <div className="container">
+          <div className="container-au">
             <div>
               <h1>Insider Info on What They Do:</h1>
               <h2>
@@ -231,7 +243,7 @@ export const AboutUs = () => {
               alt=""
             />
           </div>
-          <div className="container">
+          <div className="container-au">
             <div>
               <h1>Perks of Being a Mentor:</h1>
               <h2>
@@ -263,7 +275,7 @@ export const AboutUs = () => {
               alt=""
             />
           </div>
-          <div className="container">
+          <div className="container-au">
             <div>
               <h2>
                 Excited much? So are we! Cheers to new friendships, exciting
