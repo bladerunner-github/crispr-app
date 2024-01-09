@@ -118,7 +118,7 @@ class EventForm extends Component {
         <hr /> */}
         {/* first row ends */}
         {/* second row starts */}
-        <div className="mb-8 row mt-1  flex flex-row w-full overall-card">
+        <div className="mb-8 row1 mt-1  flex flex-row w-full overall-card">
           {/* <div className="hidden-menubar mt-3">
             {" "}
             <div className="dash col-xl-3 col-lg-4 col-md-12 col-12 mr-6 w-[22rem] h-[90%]  ml-3 bg-[#212b36] flex flex-col">
@@ -254,7 +254,7 @@ class EventForm extends Component {
                     <h4 className="mb-0 text-2xl">Basic information</h4>
                   </div>
                   <form onSubmit={this.handleSubmit}>
-                    <div className="row basicinfo">
+                    <div className="row1 basicinfo">
                       <label
                         htmlfor="Title of the event"
                         className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
@@ -274,7 +274,7 @@ class EventForm extends Component {
                         />
                       </div>
                     </div>
-                    <div className=" row basicinfo ">
+                    <div className=" row1 basicinfo ">
                       <label
                         htmlfor="fullName"
                         className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
@@ -294,7 +294,7 @@ class EventForm extends Component {
                         />
                       </div>
                     </div>
-                    <div className=" row basicinfo ">
+                    <div className=" row1 basicinfo ">
                       <label
                         htmlfor="fullName"
                         className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo"
@@ -315,7 +315,7 @@ class EventForm extends Component {
                         />
                       </div>
                     </div>
-                    <div class=" row basicinfo">
+                    <div class=" row1 basicinfo">
                       <label
                         htmlfor="description"
                         className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
@@ -323,7 +323,7 @@ class EventForm extends Component {
                         Description
                       </label>
                       <div className="col-md-8 col-12 w-[39.6rem]  inputborder">
-                        <textarea
+                        <input
                           type="textarea"
                           className="form-control h-32"
                           placeholder="Description"
@@ -335,7 +335,7 @@ class EventForm extends Component {
                         />
                       </div>
                     </div>
-                    <div className=" row basicinfo">
+                    <div className=" row1 basicinfo">
                       <label
                         className="col-sm-4 form-label w-64 borderadjinfo "
                         htmlfor="country"
@@ -356,7 +356,7 @@ class EventForm extends Component {
                       </div>
                     </div>
 
-                    <div className=" row basicinfo Time">
+                    <div className=" row1 basicinfo Time">
                       <label
                         htmlfor="Timing"
                         className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo "
@@ -377,7 +377,7 @@ class EventForm extends Component {
                       </div>
                     </div>
 
-                    <div className=" row basicinfo Time">
+                    <div className=" row1 basicinfo Time">
                       <label
                         htmlfor="Timing"
                         className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo "
@@ -399,7 +399,7 @@ class EventForm extends Component {
                       </div>
                     </div>
 
-                    <div className=" row basicinfo">
+                    <div className=" row1 basicinfo">
                       <label
                         htmlfor="email"
                         className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
@@ -419,7 +419,7 @@ class EventForm extends Component {
                         />
                       </div>
                     </div>
-                    <div className=" row basicinfo">
+                    <div className=" row1 basicinfo">
                       <label
                         className="col-sm-4 form-label  w-64 borderadjinfo "
                         htmlfor="phone"
@@ -440,7 +440,7 @@ class EventForm extends Component {
                       </div>
                     </div>
 
-                    <div className="align-items-center row basicinfo">
+                    <div className="align-items-center row1 basicinfo">
                       {/* <label className="col-sm-4 form-label w-64" htmlfor="zipcode">Zip code<i className="fe fe-info fs-4 me-2 text-muted icon-xs"></i></label> */}
                       <div>
                         <div className="col-md-8 col-12  w-[39.6rem] zip">

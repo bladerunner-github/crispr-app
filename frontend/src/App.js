@@ -25,7 +25,7 @@ import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
 import SliderData from "./components/SliderData";
 import Urgentsupport from "./components/Urgentsupport";
-import SliderData from "./components/SliderData";
+// import SliderData from "./components/SliderData";
 import EventCardIcon from "./components/EventCardIcon";
 import Buzzer_Form from "./components/Buzzer_Form";
 import Newsletter from "./components/newsletter";

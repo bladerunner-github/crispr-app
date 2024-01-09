@@ -1,8 +1,8 @@
 import React from "react";
 import "./../styles/UrgentSupport.css";
-import Urgentlargescreen from "./Urgentlargescreen";
-import Urgentsmallscreen from "./Urgentsmallscreen";
-
+// import Urgentlargescreen from "./Urgentlargescreen";
+// import Urgentsmallscreen from "./Urgentsmallscreen";
+//
 const UrgentSupport = () => {
   return (
     <div className="backimage">

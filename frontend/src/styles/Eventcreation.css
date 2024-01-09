@@ -79,7 +79,7 @@ label{
     /* border: 2px solid red; */
     font-size:22px;
 }
-.row {
+.row1 {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
