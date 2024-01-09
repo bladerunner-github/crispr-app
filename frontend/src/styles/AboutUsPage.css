@@ -234,7 +234,7 @@
   
   #third h1,
   h3 {
-   /* color: white; */
+    color: white; 
    font-family: Arial, Helvetica, sans-serif;
   } 
   
@@ -300,7 +300,7 @@
   #fourth h2,
   h1 {
     text-align: center;
-   /* padding: 2% 20%;*/
+    padding: 2% 20%;
     font-size: xx-large;
   } 
   
