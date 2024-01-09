@@ -55,7 +55,7 @@ class Eventpage extends Component {
               <div className="locationlocation">Location : {location}</div>
             </div>
             <div className="button">
-              <button>RSVP</button>
+              <button className="w-1/2">RSVP</button>
             </div>
             <div className="hostname">
               <div className="hostnameimage">
