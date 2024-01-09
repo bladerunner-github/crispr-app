@@ -1,270 +1,218 @@
-/* .cover {
+.login-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #f7f7f7;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background-color: #fff;
-  padding: 20px;
+.login_page {
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.login-form input {
+  box-shadow: 8px 17px 60px 13px rgba(0, 0, 0, 0.1);
+  height: auto;
+  max-width: 600px;
+  padding: 40px 15px;
+  text-align: center;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-btn:hover {
-  background-color: #0056b3;
-}
-
-
-.text {
-  margin: 10px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.alt-login {
-  display: flex;
-  gap: 10px;
-}
-
-
-.popup {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #ff6b6b;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
+  display: block;
   justify-content: center;
+  align-items: center;
 }
 
-.popup h3 {
-  margin: 0;
+.login_page .fas {
+  color: rgb(51, 43, 43);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.login_page .form {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.login_page .welcome {
+  color: #3b3663;
+  display: block;
+  font-size: 28px;
+}
+
+.login_page span {
+  color: #696687;
+  font-size: 18px;
+  opacity: .8;
+}
+
+.register .form .form-row,
+.login_page .form .form-row {
+  position: relative;
+  text-align: left;
+}
+
+.login_page .form .form-row.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_page .form .form-row {
+  position: relative;
+  text-align: left;
+}
+
+.login_page .form .form-label {
+  color: #696687;
+  font-size: 17px;
+  opacity: .7;
+}
+
+.login_page .form-text {
+  color: #696687;
+  font-size: 18px;
+  border: 0;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 40px 0 0px;
+  width: 100%;
+  background: white no-repeat;
+  transition: 100ms all linear 0s;
+  background-image: linear-gradient(to bottom, rgba(77, 97, 252, 0.63) 0%, #4d61fc 90%), linear-gradient(to bottom, #e1e1e1, #e1e1e1);
+  background-size: 0 2px, 100% 1px;
+  background-position: 50% 100%, 50% 100%;
+  transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.login_page .form .form-row .fas {
   font-size: 16px;
-  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  color: #696687;
+  opacity: .3;
 }
 
-.popup p {
-  margin: 5px 0;
-  font-size: 14px;
+.login_page .form .form-row .form-check input[type="checkbox"]+label:before {
+  border-radius: 3px;
+  border: 1px solid #e2e2e2;
+  color: transparent;
+  content: "\2714";
+  display: inline-block;
+  height: 18px;
+  margin-right: 5px;
+  transition: 0.2s;
+  vertical-align: inherit;
+  width: 18px;
+  text-align: center;
+  line-height: 20px;
 }
 
+.login_page .form .form-row .form-check input[type="checkbox"] {
+  display: none;
+}
 
-.logout-button {
-  background-color: #f00;
-
-  color: #fff;
-
-  border: none;
-
-  padding: 10px 20px;
-
-  margin-top: 6%;
-
+.login_page .form .form-row .form-check input[type="checkbox"]+label {
   cursor: pointer;
-
-  border-radius: 5px;
-
+  display: block;
+  color: #696687;
+  font-size: 18px;
+  opacity: .7;
 }
 
+.login_page .form .form-row.bottom .forgot {
+  color: #4d61fc;
+  font-size: 18px;
+  opacity: .7;
+}
+
+.login_page .form .form-label {
+  color: #696687;
+  font-size: 18px;
+  opacity: .7;
+}
+
+.login_page .form .form-row.button-login {
+  margin-top: 30px;
+}
+
+.button {
+  align-items: center;
+  justify-content: center;
+  background: #4d61fc;
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 15px 45px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
 
 .logout-button:hover {
-  background-color: #d00;
-
+  background-color: rgb(88, 56, 250);
 }
-
 
 .logout-container {
-  width: 20%;
-  height: 20%;
-
-  border: 1px solid slategrey;
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
-.logout-container p {
-  margin-top: 10%;
-} */
-/* .cover {
+.logout_page .logout-button {
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
-
-.login-form,
-.logout-container {
-  background-color: #fff;
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.login-form input,
-.logout-container p {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-btn,
-.logout-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  background: #3B3847;
+  border-radius: 6px;
+  border: 0;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 15px 45px;
+  transition: 0.2s;
+  font-weight: 600;
 }
 
-.login-btn:hover,
-.logout-button:hover {
-  background-color: #0056b3;
-}
-
-.popup {
-  background-color: #fff;
-  max-width: 400px;
-  padding: 20px;
+.logout_page {
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  box-shadow: 8px 17px 60px 13px rgba(0, 0, 0, 0.1);
+  /* margin-top: 40px;
+  margin-bottom: 40px; */
+  height: auto;
+  max-width: 400px;
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 
-.popup h3 {
-  color: #ff0000;
-} */
-
-/* Add any additional styles you need for your specific design. */
-
-body {
-  /* background: url('https://img.freepik.com/premium-vector/futuristic-background-style_23-2148503794.jpg') no-repeat center center fixed !important; */
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.cover {
+.logout-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-.login-form,
-.logout-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 32%;
-  /* height: 40%; */
-  /* Set the container width to 50% */
-  margin: 0 auto;
-  /* Center the container horizontally */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.login-form:hover,
-.logout-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.login-form input,
-.logout-container p {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  transition: border 0.3s;
-}
-
-.login-form input:hover,
-.login-form input:focus,
-.logout-container p:hover,
-.logout-container p:focus {
-  border: 2px solid #007bff;
-}
-
-.login-btn,
-.logout-button {
-  width: 100%;
-  padding: 15px;
-  background-color: #007bff;
+  border-radius: 6px;
+  border: 0;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  display: flex;
+  font-size: 16px;
+  padding: 25px 45px;
+  transition: 0.2s;
+  font-weight: 600;
 }
 
-.login-btn:hover,
-.logout-button:hover {
-  background-color: #0056b3;
-}
-
-.popup {
-  background-color: rgba(255, 255, 255, 0.9);
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.popup:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-.popup h3 {
-  color: #ff0000;
+.confirmation {
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

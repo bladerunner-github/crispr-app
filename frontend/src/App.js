@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import HomeUser from "./pages/homeuser";
 import Menu from "./pages/Menu";
 import About from "./pages/Article";
+import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
 import NavbarLoggedIn from "./components/navbarmoderator";
 import NavbarLoggedOut from "./components/Navbar";
@@ -24,6 +25,12 @@ import EventCardList from "./components/EventCardList";
 import EventCard from "./components/EventCardIcon";
 import SliderData from "./components/SliderData";
 import Urgentsupport from "./components/Urgentsupport";
+import SliderData from "./components/SliderData";
+import EventCardIcon from "./components/EventCardIcon";
+import Buzzer_Form from "./components/Buzzer_Form";
+import Newsletter from "./components/newsletter";
+import { AboutUs } from "./pages/AboutUs";
+import AboutUsSnippet from "./components/AboutUsSnippet";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -72,6 +79,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/event-table" element={<EventListTable />} />
         <Route path="/Urgent-support" element={<Urgentsupport />} />
+        <Route path="/event-cards" element={<EventCardList />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/OurTeam" element={<OurTeam />} />
+        <Route path="/about-us" element={<AboutUs />} />
+
         <Route
           path="/login"
           element={
@@ -82,6 +94,7 @@ function App() {
             />
           } // Pass handleLogin as a prop
         />
+        <Route path="/Buzzer_Form" element={<Buzzer_Form />} />
       </Routes>
 
       {/* <ImageSlider slides={SliderData} />
@@ -101,6 +114,7 @@ function App() {
             <Blog />
             <Blog />
           </div>
+          <AboutUsSnippet />
         </>
       ) : null}
       <Footer />

@@ -13,8 +13,8 @@ nav {
 }
 
 nav > a >img{
-  height: 70px;
-  width: 150px;
+  height: 80px;
+  width: 200px;
 }
 
 #navbar li {
@@ -60,6 +60,19 @@ nav > a >img{
   align-items: center;
 }
 
+@media screen and (min-width: 1024px){
+  #navbar li a {    
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #navbar li a {    
+    font-size: 1rem;
+  }
+}
+
+
 @media screen and (max-width: 1024px){
   nav {
     display: flex;
@@ -91,7 +104,7 @@ nav > a >img{
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 114px;
+    top: 110px;
     right: -270px;
     width: 260px;
     height: 100vh;
