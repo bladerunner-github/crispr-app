@@ -5,8 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
-import CRISPR_black from '../assets/CRISPR_black.png'
+import photo from "../assets/tree-736885_1280.jpg"
 
 export default function EventCardIcon() 
 {
@@ -16,7 +15,7 @@ export default function EventCardIcon()
         component="img"
         alt="green iguana"
         height="140"
-        image={CRISPR_black}
+        image={photo}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">

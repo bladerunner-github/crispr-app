@@ -27,6 +27,8 @@ import SliderData from './components/SliderData';
 import EventCardIcon from "./components/EventCardIcon";
 import Buzzer_Form from "./components/Buzzer_Form";
 import Newsletter from "./components/newsletter";
+import { AboutUs } from "./pages/AboutUs";
+import AboutUsSnippet from "./components/AboutUsSnippet";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -78,6 +80,7 @@ function App() {
         <Route path="/event-cards" element={<EventCardList />} />
         <Route path="/newsletter" element = {<Newsletter/>}/>
         <Route path="/OurTeam" element={<OurTeam />} />
+        <Route path="/about-us" element = {<AboutUs />} />
 
         <Route
           path="/login"
@@ -109,6 +112,7 @@ function App() {
             <Blog />
             <Blog />
           </div>
+          <AboutUsSnippet />
         </>
       ) : null}
       <Footer />
