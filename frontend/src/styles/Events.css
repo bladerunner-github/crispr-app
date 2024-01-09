@@ -276,7 +276,7 @@ main {
     font-size: larger;
     width: 100%;
     min-height: 30%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .date {
     margin-top: 1.8%;

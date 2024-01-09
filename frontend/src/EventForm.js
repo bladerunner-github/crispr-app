@@ -323,7 +323,7 @@ class EventForm extends Component {
                         Description
                       </label>
                       <div className="col-md-8 col-12 w-[39.6rem]  inputborder">
-                        <input
+                        <textarea
                           type="textarea"
                           className="form-control h-32"
                           placeholder="Description"
@@ -331,6 +331,7 @@ class EventForm extends Component {
                           name="description"
                           value={this.state.description}
                           onChange={this.handleChange}
+                          maxLength={200}
                         />
                       </div>
                     </div>
