@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Articlelist({ name, author, linkTo, image }) {
   return (
     <div className="menuItem">
-      <div className="image-container" style={{ backgroundImage: `url(${image})` }}>
-        <div className="image-overlay">
+      <div className="image-container1" style={{ backgroundImage: `url(${image})` }}>
+        <div className="image-overlay1">
           <h1>{name}</h1>
           <div className="underline">
             <h3>{author}</h3>

@@ -20,7 +20,7 @@ function About() {
         style={{ backgroundImage: `url(${MP})` }}
       ></div>
       <div className="aboutBottom">
-        <h1 id="heading">ARTICLES</h1>
+        <h1 id="heading123">ARTICLES</h1>
         <div className="menu">
           <div className="menuList">
             {articlelist.map((menuItem, index) => (
