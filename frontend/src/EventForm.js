@@ -257,7 +257,7 @@ class EventForm extends Component {
                     <div className="row1 basicinfo">
                       <label
                         htmlfor="Title of the event"
-                        className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
+                        className="col-sm-4 col-form-label  text-left form-label w-64 borderadjinfo "
                       >
                         Title of the event
                       </label>
@@ -277,7 +277,7 @@ class EventForm extends Component {
                     <div className=" row1 basicinfo ">
                       <label
                         htmlfor="fullName"
-                        className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
+                        className="col-sm-4 col-form-label  text-left form-label w-64 borderadjinfo "
                       >
                         First Name{" "}
                       </label>
@@ -297,7 +297,7 @@ class EventForm extends Component {
                     <div className=" row1 basicinfo ">
                       <label
                         htmlfor="fullName"
-                        className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo"
+                        className="col-sm-4 col-form-label form-label  text-left w-64 name-time borderadjinfo"
                       >
                         Last Name{" "}
                       </label>
@@ -318,7 +318,7 @@ class EventForm extends Component {
                     <div class=" row1 basicinfo">
                       <label
                         htmlfor="description"
-                        className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
+                        className="col-sm-4 col-form-label  text-left form-label w-64 borderadjinfo "
                       >
                         Description
                       </label>
@@ -337,7 +337,7 @@ class EventForm extends Component {
                     </div>
                     <div className=" row1 basicinfo">
                       <label
-                        className="col-sm-4 form-label w-64 borderadjinfo "
+                        className="col-sm-4 form-label  text-left w-64 borderadjinfo "
                         htmlfor="country"
                       >
                         Location
@@ -359,7 +359,7 @@ class EventForm extends Component {
                     <div className=" row1 basicinfo Time">
                       <label
                         htmlfor="Timing"
-                        className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo "
+                        className="col-sm-4 col-form-label form-label  text-left w-64 name-time borderadjinfo "
                       >
                         Date
                       </label>
@@ -380,7 +380,7 @@ class EventForm extends Component {
                     <div className=" row1 basicinfo Time">
                       <label
                         htmlfor="Timing"
-                        className="col-sm-4 col-form-label form-label w-64 name-time borderadjinfo "
+                        className="col-sm-4 col-form-label  text-left form-label w-64 name-time borderadjinfo "
                       >
                         Time
                       </label>
@@ -402,7 +402,7 @@ class EventForm extends Component {
                     <div className=" row1 basicinfo">
                       <label
                         htmlfor="email"
-                        className="col-sm-4 col-form-label form-label w-64 borderadjinfo "
+                        className="col-sm-4 col-form-label  text-left form-label w-64 borderadjinfo "
                       >
                         Email
                       </label>
@@ -421,7 +421,7 @@ class EventForm extends Component {
                     </div>
                     <div className=" row1 basicinfo">
                       <label
-                        className="col-sm-4 form-label  w-64 borderadjinfo "
+                        className="col-sm-4 form-label   text-left w-64 borderadjinfo "
                         htmlfor="phone"
                       >
                         Phone <span className="text-muted"></span>
