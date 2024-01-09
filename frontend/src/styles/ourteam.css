@@ -1,0 +1,138 @@
+/* ourteam.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  
+  background-color: #f5f5f5;
+  
+
+  
+}
+
+.our-team-container {
+  max-width: 1000px;
+  margin: 1 auto;
+  padding: 5em;
+
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  
+
+}
+@media (max-width: 600px) {
+  .centered-content {
+    max-width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.column {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: #0b080d;
+  margin-bottom: 1em;
+}
+
+.faculty-rep { 
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 1em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #efe6e6;
+  margin: 0.5em;
+  max-width: 290px;
+  border: 2px solid #7f28cc;
+}
+
+.faculty-rep:hover { /* Adjusted class name */
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.3);
+  border: 2px solid #8567f7;
+}
+
+.faculty-rep .img-container { /* Adjusted class name */
+  width: 5em;
+  height: 5em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-rep img { /* Adjusted class name */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.faculty-rep h3 { /* Adjusted class name */
+  font-weight: 500;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.faculty-rep p { /* Adjusted class name */
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0.5em 0 1em 0;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faculty-rep a { /* Adjusted class name */
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+
+.faculty-rep:hover { /* Adjusted class name */
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+  .row {
+    justify-content: space-around;
+  }
+
+
+
+
+
+
