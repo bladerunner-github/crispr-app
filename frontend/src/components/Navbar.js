@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../assets/CRISPR_white.png";
+import Logo from "../assets/MANAS_yellow1.png";
 import { Link } from "react-router-dom";
 import login_img from "../assets/user-login.png"
 
@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav>
-        <Link to="/">
+        <Link to="/home">
           <img src={Logo} />
         </Link>
         <div>
@@ -23,13 +23,13 @@ class Navbar extends Component {
               <Link to="/home"> Home </Link>
             </li>
             <li>
-              <Link to="/Menu"> Events </Link>
+              <Link to="/Form">Create Event </Link>
+            </li>
+            <li>
+              <Link to="/">Upcoming Events </Link>
             </li>
             <li>
               <Link to="/about"> Article </Link>
-            </li>
-            <li>
-              <Link to="/contact"> Buzzer </Link>
             </li>
    <li>
             <Link to="/OurTeam">Our Team</Link>

@@ -1,5 +1,5 @@
 .slider {
-
+  
   margin-top: 3.5vw;
   margin-bottom: 3.5vw;
   background-color: white;
@@ -63,12 +63,16 @@
 .slide {
   opacity: 0;
   transition-duration: 1s ease;
+  /* transition: transform 1s ease; 
+  transform: translateX(100%);  */
 }
 
 .slide.active {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1);
+  /* transition: transform 1s ease; 
+  transform: translateX(0);  */
   width: 100%;
   /* border: 10px solid #cfcfd1; */
   height: 70vh;
