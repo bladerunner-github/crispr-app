@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ourteam.css'; // Adjust the path based on your project structure
-import PP from '../assets/pp.jpeg';
+import PP from '../assets/rp.avif';
 
 const TeamSection = () => {
   return (
