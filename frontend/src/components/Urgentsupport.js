@@ -8,7 +8,7 @@ const UrgentSupport = () => {
     <div className="backimage">
       {/* Contact Address Area */}
       <section className="contact-address-area">
-        <div className="container  border-blue-800 ">
+        <div className="container1  border-blue-800 ">
           <div className="sec-title-style1 text-center max-width">
             <div className="title">Urgent Support</div>
             <div className="text">
