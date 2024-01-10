@@ -35,7 +35,7 @@
 
 .aboutBottom h1 {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #333;
   text-align: center;
   margin-top: 20px;
@@ -54,7 +54,9 @@
   max-width: 20em;
   margin-top: 68%;
 }
-
+#ap {
+ color: #000;
+}
 .menuItem {
   display: flex;
   flex-direction: column;
@@ -86,9 +88,15 @@
 .menuItem a.button-link:hover {
   background-color: #0056b3;
 }
+#apl {
+  font-weight: bold;
+  font-size: 55%;
+}
 
 .underline {
   margin-bottom: -1em;
   width: 100%;
   text-align: center;
+  
 }
+

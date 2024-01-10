@@ -5,7 +5,7 @@ import PP from '../assets/rp.avif';
 const TeamSection = () => {
   return (
     <div className="container2">
-    <div className="container">
+    <div className="container222">
       <div className="row">
         <div className="col-md-12 col-sm-12">
           <h1 className="heading" align="center"><b>Faculty Coordinator</b></h1>
@@ -126,11 +126,7 @@ const TeamSection = () => {
         </div>
         
       </div>
-      <div className="row">
-        <div className="col-md-12 col-sm-12">
-         
-        </div>
-      </div>
+      
 
       <div className="row faculty-row">
         {/* First Counsellor */}

@@ -32,7 +32,7 @@ export const articlelist = [
   },
   {
     name: "Managing Stress in College- Why’s it so Hard?",
-    author: "-paige muskat",
+    author: "-Paige Muskat",
     link: "https://medium.com/@muskatp/managing-stress-in-college-whys-it-so-hard-9754ff573a0f",
 
   },
