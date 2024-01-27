@@ -28,9 +28,11 @@ import Urgentsupport from "./components/Urgentsupport";
 // import SliderData from "./components/SliderData";
 import EventCardIcon from "./components/EventCardIcon";
 import Buzzer_Form from "./components/Buzzer_Form";
+import Buzzer_btn from "./components/Buzzer_btn";
 import Newsletter from "./components/newsletter";
 import { AboutUs } from "./pages/AboutUs";
 import AboutUsSnippet from "./components/AboutUsSnippet";
+import {Link} from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -108,6 +110,7 @@ function App() {
       {location.pathname === "/" ? (
         <>
           <ImageSlider slides={SliderData} />
+          <Link to="../Buzzer_Form"> <Buzzer_btn/></Link>
           <Banner />
           <div className="all-blogs">
             <Blog />
