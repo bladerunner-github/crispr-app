@@ -20,27 +20,39 @@ class Navbar extends Component {
         <div>
           <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
             <li>
-              <Link to="/home"> Home </Link>
+              <div  onClick={this.handleClick}>
+                <Link to="/home"> Home </Link>
+              </div>
             </li>
             <li>
-              <Link to="/Form">Create Event </Link>
+              <div  onClick={this.handleClick}>
+                <Link to="/Form">Create Event </Link>
+              </div>
             </li>
             <li>
-              <Link to="/">Upcoming Events </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/">Upcoming Events </Link>
+              </div>
             </li>
             <li>
-              <Link to="/about"> Article </Link>
-            </li>
-   <li>
-            <Link to="/OurTeam">Our Team</Link>
+              <div onClick={this.handleClick}>
+                <Link to="/about"> Article </Link>
+              </div>
             </li>
             <li>
-              <Link to="./login">
-                <div className="login">
-                  <img src={login_img} width={25} height={25}></img>
-                  Log in
-                </div>
-              </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/OurTeam">Our Team</Link>
+              </div>
+            </li>
+            <li>
+              <div onClick={this.handleClick}>
+                <Link to="./login">
+                  <div className="login">
+                    <img src={login_img} width={25} height={25}></img>
+                    Log in
+                  </div>
+                </Link>
+              </div>
             </li>
           </ul>
           <div id="mobile" onClick={this.handleClick}>

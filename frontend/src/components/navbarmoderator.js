@@ -20,33 +20,49 @@ class Navbar extends Component {
         <div>
           <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
             <li>
-              <Link to="/home"> Home </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/home"> Home </Link>
+              </div>
             </li>
             <li>
-              <Link to="/Menu"> Events </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/Menu"> Events </Link>
+              </div>
             </li>
             <li>
-              <Link to="/Form"> Events creation </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/Form"> Events creation </Link>
+              </div>
             </li>
             <li>
-              <Link to="/event-table"> Events approval </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/event-table"> Events approval </Link>
+              </div>
             </li>
             <li>
-              <Link to="/About"> Article approval </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/About"> Article approval </Link>
+              </div>
             </li>
             <li>
-              <Link to="/Contact"> Response </Link>
-            </li>
-   <li>
-            <Link to="/OurTeam">Our Team</Link>
+              <div onClick={this.handleClick}>
+                <Link to="/Contact"> Response </Link>
+              </div>
             </li>
             <li>
-              <Link to="./login">
-                <div className="login">
-                  <img src={login_img} width={25} height={25}></img>
-                  Log Out
-                </div>
-              </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/OurTeam">Our Team</Link>
+              </div>
+            </li>
+            <li>
+              <div onClick={this.handleClick}>
+                <Link to="./login">
+                  <div className="login">
+                    <img src={login_img} width={25} height={25}></img>
+                    Log Out
+                  </div>
+                </Link>
+              </div>
             </li>
           </ul>
           <div id="mobile" onClick={this.handleClick}>
