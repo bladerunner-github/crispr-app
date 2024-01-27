@@ -3,7 +3,7 @@ import { getGlobalData } from "./globalState";
 import EventCard from "./EventCard";
 import Eventpage from "./components/Eventpage";
 import { events } from "./components/index1";
-
+import "./styles/eventspagecss.css";
 // function EventPage() {
 //   const [data, setData] = useState([]);
 
@@ -59,7 +59,7 @@ function EventPage() {
   });
   console.log(Events);
   return (
-    <div>
+    <div className=" flex flex-row flex-wrap eventscardcss">
       {Events.map((e) =>
         e.approved ? (
           <Eventpage

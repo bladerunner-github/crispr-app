@@ -1,0 +1,19 @@
+.eventscardcss{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 480px){
+    .eventscardcss{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        
+    }
+}
+@media screen and (min-width: 468px) and (max-width: 768px) {
+    .eventscardcss{
+        display: flex;
+        flex-direction:row ;
+    }
+}
