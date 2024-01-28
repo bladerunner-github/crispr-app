@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Logo from "../assets/MANAS_yellow1.png";
 import { Link } from "react-router-dom";
-import login_img from "../assets/user-login.png"
+import login_img from "../assets/user-login.png";
 
 import "../styles/Navbar.css";
 
 class Navbar extends Component {
   state = { clicked: false };
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
-  }
+    this.setState({ clicked: !this.state.clicked });
+  };
 
   render() {
     return (
@@ -18,39 +18,55 @@ class Navbar extends Component {
           <img src={Logo} />
         </Link>
         <div>
-          <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
+          <ul
+            id="navbar"
+            className={this.state.clicked ? "#navbar active" : "#navbar"}
+          >
             <li>
-              <Link to="/home"> Home </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/home"> Home </Link>
+              </div>
             </li>
             <li>
-              <Link to="/Form">Create Event </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/Form">Create Event </Link>
+              </div>
             </li>
             <li>
               <Link to="/upcoming-events">Upcoming Events </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/Menu">Upcoming Events </Link>
+              </div>
             </li>
             <li>
-              <Link to="/about"> Article </Link>
-            </li>
-   <li>
-            <Link to="/OurTeam">Our Team</Link>
+              <div onClick={this.handleClick}>
+                <Link to="/about"> Article </Link>
+              </div>
             </li>
             <li>
-              <Link to="./login">
-                <div className="login">
-                  <img src={login_img} width={25} height={25}></img>
-                  Log in
-                </div>
-              </Link>
+              <div onClick={this.handleClick}>
+                <Link to="/OurTeam">Our Team</Link>
+              </div>
+            </li>
+            <li>
+              <div onClick={this.handleClick}>
+                <Link to="./login">
+                  <div className="login">
+                    <img src={login_img} width={25} height={25}></img>
+                    Log in
+                  </div>
+                </Link>
+              </div>
             </li>
           </ul>
           <div id="mobile" onClick={this.handleClick}>
-            <i id="bar" className={this.state.clicked ? "fas fa-times" : "fa fa-bars"}></i>
-
+            <i
+              id="bar"
+              className={this.state.clicked ? "fas fa-times" : "fa fa-bars"}
+            ></i>
           </div>
         </div>
       </nav>
-
-
     );
   }
 }
