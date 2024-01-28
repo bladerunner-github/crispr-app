@@ -41,6 +41,11 @@ class Navbar extends Component {
             </li>
             <li>
               <div onClick={this.handleClick}>
+                <Link to="/Contact"> Response </Link>
+              </div>
+            </li>
+            <li>
+              <div onClick={this.handleClick}>
                 <Link to="/OurTeam">Our Team</Link>
               </div>
             </li>
