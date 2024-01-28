@@ -49,10 +49,12 @@ body {
 
 .card {
     border: none;
+    
 }
 
 .card-body {
     padding: 20px;
+   
 }
 
 .form-label {

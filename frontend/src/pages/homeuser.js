@@ -24,9 +24,6 @@
 
 // export default home;
 
-
-
-
 // import React from "react";
 // import ImageSlider from '../components/ImageSlider';
 // import SliderData from '../components/SliderData';
@@ -49,11 +46,11 @@
 
 // export default HomeUser;
 import React from "react";
-import ImageSlider from '../components/ImageSlider';
-import SliderData from '../components/SliderData';
-import Blog from '../components/Blog';
+import ImageSlider from "../components/ImageSlider";
+import SliderData from "../components/SliderData";
+import Blog from "../components/Blog";
 import Banner from "../components/Banner";
-
+import AboutUsSnippet from "./../components/AboutUsSnippet";
 function HomeUser() {
   return (
     <div>
@@ -64,9 +61,9 @@ function HomeUser() {
         <Blog />
         <Blog />
       </div>
+      <AboutUsSnippet />
     </div>
   );
 }
 
 export default HomeUser;
-

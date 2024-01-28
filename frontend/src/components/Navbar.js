@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import Logo from "../assets/MANAS_yellow1.png";
 import { Link } from "react-router-dom";
-import login_img from "../assets/user-login.png"
+import login_img from "../assets/user-login.png";
 
 import "../styles/Navbar.css";
 
 class Navbar extends Component {
   state = { clicked: false };
   handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
-  }
+    this.setState({ clicked: !this.state.clicked });
+  };
 
   render() {
     return (
@@ -18,20 +18,23 @@ class Navbar extends Component {
           <img src={Logo} />
         </Link>
         <div>
-          <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
+          <ul
+            id="navbar"
+            className={this.state.clicked ? "#navbar active" : "#navbar"}
+          >
             <li>
-              <div  onClick={this.handleClick}>
+              <div onClick={this.handleClick}>
                 <Link to="/home"> Home </Link>
               </div>
             </li>
             <li>
-              <div  onClick={this.handleClick}>
+              <div onClick={this.handleClick}>
                 <Link to="/Form">Create Event </Link>
               </div>
             </li>
             <li>
               <div onClick={this.handleClick}>
-                <Link to="/">Upcoming Events </Link>
+                <Link to="/Menu">Upcoming Events </Link>
               </div>
             </li>
             <li>
@@ -56,13 +59,13 @@ class Navbar extends Component {
             </li>
           </ul>
           <div id="mobile" onClick={this.handleClick}>
-            <i id="bar" className={this.state.clicked ? "fas fa-times" : "fa fa-bars"}></i>
-
+            <i
+              id="bar"
+              className={this.state.clicked ? "fas fa-times" : "fa fa-bars"}
+            ></i>
           </div>
         </div>
       </nav>
-
-
     );
   }
 }

@@ -26,24 +26,28 @@
 import React from "react";
 import Blog from "../components/Blog";
 import Banner from "../components/Banner";
-import ImageSlider from '../components/ImageSlider';
-import SliderData  from '../components/SliderData';
+import ImageSlider from "../components/ImageSlider";
+import SliderData from "../components/SliderData";
 import Buzzer_btn from "../components/Buzzer_btn";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
-
+import AboutUsSnippet from "./../components/AboutUsSnippet";
 function Home() {
   return (
-         <div>
-    <ImageSlider slides={SliderData} />
-     <Link to="../Buzzer_Form"> <Buzzer_btn/></Link>
-    <Banner />
-    
-    <div className="all-blogs">
-      <Blog />
-      <Blog />
-      <Blog />
-    </div>
+    <div>
+      <ImageSlider slides={SliderData} />
+      <Link to="../Buzzer_Form">
+        {" "}
+        <Buzzer_btn />
+      </Link>
+      <Banner />
+
+      <div className="all-blogs">
+        <Blog />
+        <Blog />
+        <Blog />
+      </div>
+      <AboutUsSnippet />
     </div>
   );
 }
