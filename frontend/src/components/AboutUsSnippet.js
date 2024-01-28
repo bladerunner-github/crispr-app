@@ -16,8 +16,7 @@ const AboutUsSnippet = () =>
         programme and to each other.
         <br/><br/>
         <a href='/about-us'>Know More...</a>
-        </p>
-        
+        </p>  
     </div>
     
   )

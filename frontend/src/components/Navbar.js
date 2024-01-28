@@ -26,7 +26,7 @@ class Navbar extends Component {
               <Link to="/Form">Create Event </Link>
             </li>
             <li>
-              <Link to="/">Upcoming Events </Link>
+              <Link to="/upcoming-events">Upcoming Events </Link>
             </li>
             <li>
               <Link to="/about"> Article </Link>

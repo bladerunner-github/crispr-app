@@ -100,7 +100,7 @@ function Footer()
                 <img src= {CRISPR_white} alt=""/>
               </AspectRatio>
               <CardContent>
-                <Typography level="body-sm">Welcome to CRISPR</Typography>
+                <Typography level="body-sm">Developed by CRISPR</Typography>
               </CardContent>
             </Card>
             <List 
