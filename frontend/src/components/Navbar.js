@@ -91,8 +91,13 @@ class Navbar extends Component {
               </div>
             </li>
             <li>
-              <div onClick={this.handleClick}>
-                <Link to="/Contact"> Response </Link>
+              <div
+                onClick={() => {
+                  this.handleClick();
+                  this.enableScroll();
+                }}
+              >
+                <Link to="/Urgent-support">Helpline</Link>
               </div>
             </li>
             <li>
