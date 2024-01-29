@@ -1,12 +1,14 @@
 .banner-to-crispr
 {
     text-align: center; 
-    display: flex; 
+    display: inline-block; 
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
     margin-top: 1rem;
+    width: 100%;
+    background-color: white;
 }
 .link
 {
@@ -14,3 +16,36 @@
     display: flex;
     
 }
+.banner-heading{
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+.banner-logo{
+    height: 15rem;
+    width: 15rem;
+}
+
+@media screen and (max-width: 875px) {
+    .banner-heading{
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+    .banner-logo{
+        height: 10rem;
+        width: 10rem;
+    }
+    }
+
+    @media screen and (max-width: 410px) {
+        .banner-heading{
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+        }
+        .banner-logo{
+            height: 9rem;
+            width: 9rem;
+        }
+        }
