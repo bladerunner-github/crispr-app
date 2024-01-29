@@ -19,21 +19,21 @@ class Navbar extends Component {
         </Link>
         <div>
           <ul id="navbar" className={this.state.clicked ? '#navbar active' : '#navbar'}>
-            <li>
+          {/*  <li>
               <div onClick={this.handleClick}>
                 <Link to="/home"> Home </Link>
               </div>
-            </li>
-            <li>
+            </li> */}
+           {/*} <li>
               <div onClick={this.handleClick}>
                 <Link to="/Menu"> Events </Link>
               </div>
-            </li>
-            <li>
-              <div onClick={this.handleClick}>
+            </li> *}
+            {/* <li>
+           <div onClick={this.handleClick}>
                 <Link to="/Form"> Events creation </Link>
-              </div>
-            </li>
+              </div> 
+            </li>*/}
             <li>
               <div onClick={this.handleClick}>
                 <Link to="/event-table"> Events approval </Link>
@@ -41,7 +41,7 @@ class Navbar extends Component {
             </li>
             <li>
               <div onClick={this.handleClick}>
-                <Link to="/About"> Article approval </Link>
+                <Link to="/About"> Article  </Link>
               </div>
             </li>
             <li>
@@ -49,11 +49,11 @@ class Navbar extends Component {
                 <Link to="/Contact"> Response </Link>
               </div>
             </li>
-            <li>
+            {/*<li>
               <div onClick={this.handleClick}>
                 <Link to="/OurTeam">Our Team</Link>
               </div>
-            </li>
+          </li>*/}
             <li>
               <div onClick={this.handleClick}>
                 <Link to="./login">

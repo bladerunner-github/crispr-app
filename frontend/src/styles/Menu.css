@@ -1,3 +1,4 @@
+
 .menu {
   width: 100%;
   height: auto;
@@ -5,6 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 .menu .menuTitle {
   font-family: cursive;
@@ -17,6 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  
 }
 
 /* MENU ITEM STYLING */
@@ -27,6 +30,7 @@
   height: 350px;
   margin: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  
 }
 .menuItem:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
@@ -42,6 +46,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .menuItem h1,
