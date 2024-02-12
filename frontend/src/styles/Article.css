@@ -91,7 +91,8 @@
 }
 #apl {
   font-weight: bold;
-  font-size: 55%;
+  font-size: 75%;
+  font-family:  "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .underline {

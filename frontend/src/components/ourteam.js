@@ -5,10 +5,12 @@ import PP from '../assets/rp.avif';
 const TeamSection = () => {
   return (
     <div className="container2">
+      
     <div className="container222">
+    <h1 className="heading" ><b>Faculty Coordinator</b></h1>
       <div className="row">
         <div className="col-md-12 col-sm-12">
-          <h1 className="heading" align="center"><b>Faculty Coordinator</b></h1>
+         
         </div>
       </div>
 
@@ -38,10 +40,10 @@ const TeamSection = () => {
           </div>
         </div>
       </div>
-
+      <h1 className="heading1" ><b>Developer</b></h1>
       <div className="row">
         <div className="col-md-12 col-sm-12">
-          <h1 className="heading1" align="center"><b>Developer</b></h1>
+  
         </div>
       </div>
 

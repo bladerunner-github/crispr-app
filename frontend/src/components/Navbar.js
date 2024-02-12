@@ -80,7 +80,7 @@ this.enableScroll();
               </div>
             </li>
             <li>
-              <div onClick={this.handleClick}>
+            
 
               <div onClick={()=>{this.handleClick() ;this.enableScroll()}}>
  
