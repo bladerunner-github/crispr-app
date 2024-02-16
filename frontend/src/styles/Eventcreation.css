@@ -1,230 +1,393 @@
 /* styles/Eventcreation.css */
 
 body {
-    background-color: #101927;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  background-color: #101927;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .container-fluid {
-    background-color: #101927;
+  background-color: #101927;
 }
 
 .main1234 {
-    background-color: #201e41;
-    padding: 20px;
-    /* border-radius: 10px; */
-    box-shadow: 0 0 20px rgba(32, 30, 65, 0.8);
+  background-color: #201e41;
+  padding: 7rem;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 20px rgba(32, 30, 65, 0.8);
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+
+}
+.forminfodiv {
+  padding: 3rem;
+  flex: 1; 
+  /* border: 2px solid green; */
+}
+.forminfodiv-heading{
+  color: whitesmoke;
+  font-size: xx-large;
+}
+.forminfodiv-text {
+  margin-top: 1rem;
+  color: white; /* Set text color to white */
+  font-size: large;
+}
+.illustration{
+  margin-top: 1.4rem;
 }
 
+
 .row1 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .overall-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100vh;
-    max-width: 50%;
-    margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid yellow; */
+
 }
 
 .parent-card {
-    padding: 20px;
-    max-width: 100%;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px #241f4b; /* Initial glowing box-shadow */
-    animation: glow 2s infinite alternate; /* Glowing animation */
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #241f4b; /* Initial glowing box-shadow */
+  animation: glow 2s infinite alternate; /* Glowing animation */
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+
 }
 
 @keyframes glow {
-    to {
-        box-shadow: 0 0 20px 10px #241f4b; /* Intense glowing box-shadow */
-    }
+  to {
+      box-shadow: 0 0 20px 10px #241f4b; /* Intense glowing box-shadow */
+  }
 }
+
+
+
 
 .card {
-    border: none;
-    
+  border: none;
+  flex: 1;
+  /* flex: 1; Allow the card to grow and take available space */
+  /* margin-left: 20px; */
+  /* display: flex;
+  flex-direction: row; */
+  
 }
+/* Adjust text color for forminfodiv */
 
 .card-body {
-    padding: 20px;
-   
+  padding: 20px;
+ 
+ 
 }
 
 .form-label {
-    color: #000000;
-    text-align: left; /* Change text-align to left */
+  color: #000000;
+  text-align: left; /* Change text-align to left */
 }
 
 .inputborder {
-    border: 1px solid #252b39;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 10px; /* Adjust margin-top for spacing */
-    margin-bottom: 10px; /* Adjust margin-bottom for spacing */
+  border: 1px solid #252b39;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px; /* Adjust margin-top for spacing */
+  margin-bottom: 10px; /* Adjust margin-bottom for spacing */
 }
 
 .form-control {
-    border: none;
-    border-radius: 0;
-    outline: none;
-    padding: 8px;
-    width: 100%;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  padding: 8px;
+  width: 100%;
 }
 
 .form-control::placeholder {
-    color: #252b39;
-    text-align: left;
-    text-decoration: none;
+  color: #252b39;
+  text-align: left;
+  text-decoration: none;
 }
 
 .btn-primary {
-    background-color: #201e41;
-    border: 1px solid #e5e6ea;
-    color: #e5e6ea;
+  background-color: #201e41;
+  border: 1px solid #e5e6ea;
+  color: #e5e6ea;
 }
 
 .btn-secondary {
-    background-color: #201e41;
-    border: 1px solid #e5e6ea;
-    color: #e5e6ea;
+  background-color: #201e41;
+  border: 1px solid #e5e6ea;
+  color: #e5e6ea;
 }
 
 .bg-fuchsia-900 {
-    background-color: #201e41;
+  background-color: #201e41;
 }
 
 .bg-white {
-    background-color: #ffffff;
-    border-radius: 5px;
-    color: #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #000000;
 }
 
 
 
 .basicinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .basicinfo .borderadjinfo {
-    width: 30%; /* Adjust the width as needed */
-    text-align: left; /* Align text to the left */
-    margin-right: 10px; /* Adjust the margin for spacing */
+  width: 30%; /* Adjust the width as needed */
+  text-align: left; /* Align text to the left */
+  margin-right: 10px; /* Adjust the margin for spacing */
 }
 
 .basicinfo .form-label {
-    flex: 1;
-    text-align: left; /* Align text to the left */
-    margin-right: 0;
-    padding-left: 0;
+  flex: 1;
+  text-align: left; /* Align text to the left */
+  margin-right: 0;
+  padding-left: 0;
 }
 
 @media (max-width: 480px) {
-    .overall-card {
-      max-width: 100%;
-    }
-  
-    .parent-card {
-      padding: 10px; /* Adjust padding for smaller screens */
-    }
-  
-    .basicinfo .borderadjinfo {
-      width: 100%; /* Full width for smaller screens */
-      margin-right: 0;
-    }
-  
-    .basicinfo .form-label {
-      width: 100%; /* Full width for smaller screens */
-      margin-right: 0;
-      padding-left: 0;
-    }
+  .main1234 {
+    padding: 3rem; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-direction: column;
   }
-  @media (min-width: 481px) and (max-width: 768px) {
-    .overall-card {
-      max-width: 80%; /* Adjust max-width as needed */
-    }
   
-    .parent-card {
-      padding: 15px; /* Adjust padding for medium screens */
-    }
-  
-    .basicinfo .borderadjinfo {
-      width: 50%; /* Adjust the width as needed */
-      margin-right: 10px; /* Adjust the margin for spacing */
-    }
-  
-    .basicinfo .form-label {
-      width: 50%; /* Adjust the width as needed */
-      margin-right: 0;
-      padding-left: 0;
-    }
+  .forminfodiv {
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .overall-card {
-      max-width: 70%; /* Adjust max-width as needed */
-    }
   
-    .parent-card {
-      padding: 20px; /* Adjust padding for larger screens */
-    }
-  
-    .basicinfo .borderadjinfo {
-      width: 40%; /* Adjust the width as needed */
-      margin-right: 15px; /* Adjust the margin for spacing */
-    }
-  
-    .basicinfo .form-label {
-      width: 60%; /* Adjust the width as needed */
-      margin-right: 0;
-      padding-left: 0;
-    }
+  .illustration {
+    margin-top: 0.8rem; /* Adjust margin for smaller screens */
   }
-  @media (min-width: 1025px) and (max-width: 1440px) {
-    .overall-card {
-      max-width: 60%; /* Adjust max-width as needed */
-    }
   
-    .parent-card {
-      padding: 25px; /* Adjust padding for larger screens */
-    }
-  
-    .basicinfo .borderadjinfo {
-      width: 30%; /* Adjust the width as needed */
-      margin-right: 20px; /* Adjust the margin for spacing */
-    }
-  
-    .basicinfo .form-label {
-      width: 70%; /* Adjust the width as needed */
-      margin-right: 0;
-      padding-left: 0;
-    }
+  .overall-card {
+    max-width: 100%; /* Set maximum width to full width for smaller screens */
   }
-  @media (min-width: 1441px) {
-    .overall-card {
-      max-width: 50%; /* Adjust max-width as needed */
-    }
   
-    .parent-card {
-      padding: 30px; /* Adjust padding for larger screens */
-    }
-  
-    .basicinfo .borderadjinfo {
-      width: 20%; /* Adjust the width as needed */
-      margin-right: 30px; /* Adjust the margin for spacing */
-    }
-  
-    .basicinfo .form-label {
-      width: 80%; /* Adjust the width as needed */
-      margin-right: 0;
-      padding-left: 0;
-    }
+  .parent-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Change flex direction to column for smaller screens */
   }
+  
+  .basicinfo .borderadjinfo,
+  .basicinfo .form-label {
+    width: 100%; /* Set width to full width for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+    padding-left: 0; /* Remove left padding for smaller screens */
+    text-align: left; /* Align text to the left for smaller screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .main1234 {
+    padding: 3rem; /* Adjust padding for medium screens */
+    display: flex;
+    flex-direction: column; /* Flex direction to column for medium screens */
+  }
+  
+  .forminfodiv {
+    padding: 1rem; /* Adjust padding for medium screens */
+  }
+  
+  .illustration {
+    margin-top: 0.8rem; /* Adjust margin for medium screens */
+  }
+  
+  .overall-card {
+    max-width: 90%; /* Adjust max-width as needed */
+  }
+  
+  .parent-card {
+    padding: 15px; /* Adjust padding for medium screens */
+  }
+  
+  .basicinfo .borderadjinfo,
+  .basicinfo .form-label {
+    width: 100%; /* Set width to full width for medium screens */
+    margin-right: 0; /* Remove right margin for medium screens */
+    padding-left: 0; /* Remove left padding for medium screens */
+    text-align: left; /* Align text to the left for medium screens */
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main1234 {
+    padding: 2rem; /* Adjust padding for larger medium screens */
+    display: flex;
+    flex-direction: row; /* Flex direction to row for larger medium screens */
+    /* align-items: center; */
+     /* Align items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    /* border: 2px solid black; */
+  }
+  
+  .forminfodiv {
+    /* Adjust padding for larger medium screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+    /* border: 2px solid red; */
+    max-width: 50%;
+    max-height: 80%;
+    height: 100%;
+    margin-top: 1rem;
+  }
+  
+  .illustration {
+    margin-top: 1.4rem; /* Adjust margin for larger medium screens */
+     /* Adjust width of the image */
+    height: auto; /* Ensure aspect ratio is maintained */
+    max-width: 100%;
+  }
+  
+  .overall-card {
+    max-width: 80%; /* Adjust max-width as needed */
+    margin-left: 0.2rem; /* Add spacing between overall-card and forminfodiv */
+    flex: 1; /* Allow flex item to grow and take available space */
+    /* border: 2px solid yellow; */
+    width: 100%;
+  }
+  
+  .parent-card {
+    padding: 20px; /* Adjust padding for larger medium screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+  }
+  
+  .basicinfo .borderadjinfo,
+  .basicinfo .form-label {
+    width: 30%; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin for spacing */
+  }
+
+  .basicinfo .form-label {
+    width: 70%; /* Adjust the width as needed */
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .main1234 {
+    padding: 4rem; /* Adjust padding for larger screens */
+    display: flex;
+    flex-direction: row; /* Flex direction to row for larger screens */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    justify-content: space-between; /* Distribute space between items */
+  }
+  
+  .forminfodiv {
+    margin-top: 1rem;
+    padding: 2rem; /* Adjust padding for larger screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+    max-height: 500px; /* Limit max height of forminfodiv */
+    /* overflow-y: auto; Enable vertical scrolling if content exceeds max height */
+  }
+  
+  .illustration {
+    margin-top: 2rem; /* Adjust margin for larger screens */
+    width: 90%; /* Adjust width of the image */
+    height: auto; /* Ensure aspect ratio is maintained */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* border: 2px solid red; */
+  }
+  
+  .overall-card {
+    max-width: 70%; /* Adjust max-width as needed */
+    margin-left: 2rem; /* Add spacing between overall-card and forminfodiv */
+    flex: 1; /* Allow flex item to grow and take available space */
+    height: 500px; /* Set height for overall-card */
+    margin-bottom: 2rem;
+  }
+  
+  .parent-card {
+    padding: 30px; /* Adjust padding for larger screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+    margin-bottom: 3rem; /* Add margin at the bottom */
+  }
+  
+  .basicinfo .borderadjinfo,
+  .basicinfo .form-label {
+    width: 25%; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin for spacing */
+  }
+
+  .basicinfo .form-label {
+    width: 75%; /* Adjust the width as needed */
+    margin-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1441px) {
+  .main1234 {
+    padding: 5rem; /* Adjust padding for larger screens */
+    display: flex;
+    flex-direction: row; /* Flex direction to row for larger screens */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    justify-content: space-between; /* Distribute space between items */
+  }
+  
+  .forminfodiv {
+    padding: 2rem; /* Adjust padding for larger screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+    max-height: 600px; /* Limit max height of forminfodiv */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  }
+  
+  .illustration {
+    margin-top: 2rem; /* Adjust margin for larger screens */
+    width: 90%; /* Adjust width of the image */
+    height: 100%; /* Ensure aspect ratio is maintained */
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .overall-card {
+    max-width: 70%; /* Adjust max-width as needed */
+    margin-left: 3rem; /* Add spacing between overall-card and forminfodiv */
+    flex: 1; /* Allow flex item to grow and take available space */
+    height: 600px; /* Set height for overall-card */
+  }
+  
+  .parent-card {
+    padding: 30px; /* Adjust padding for larger screens */
+    flex: 1; /* Allow flex item to grow and take available space */
+    margin-bottom: 3rem; /* Add margin at the bottom */
+  }
+  
+  .basicinfo .borderadjinfo,
+  .basicinfo .form-label {
+    width: 25%; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the margin for spacing */
+  }
+
+  .basicinfo .form-label {
+    width: 75%; /* Adjust the width as needed */
+    margin-right: 0;
+    padding-left: 0;
+  }
+}

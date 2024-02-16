@@ -99,14 +99,30 @@ class EventForm extends Component {
     } = this.state;
 
     return (
-      <div className="p-6 container-fluid main1234">
+      <div className="p-12 container-fluid main1234">
+        <div className="forminfodiv">
+          <p className="forminfodiv-heading text-slate-100">
+          Fill out the form to start the cohort{" "}
+          </p>
+          <p className="forminfodiv-text">
+            create an exciting cohort 
+            <br />
+            
+          </p>
+          <img
+            src="https://res.cloudinary.com/alexandracaulea/image/upload/v1585333913/illustration_x46ict.svg"
+            alt=""
+            aria-hidden="true"
+            className="illustration"
+          />
+        </div>
         <div className="mb-8 row1 mt-1 flex flex-row w-full overall-card">
           <div className="parent-card col-xl-9 col-lg-8 col-md-12 col-12 w-[70%] m-auto">
             <div className="card bg-fuchsia-900">
               <div className="card-body bg-white">
-                <div className="mb-6">
-                  <h4 className="mb-0 text-2xl">Event Form - Step {step}</h4>
-                </div>
+                {/* <div className="mb-6"> */}
+                {/* <h4 className="mb-0 text-2xl">Event Form - Step {step}</h4> */}
+                {/* </div> */}
 
                 {step === 1 && (
                   <form onSubmit={this.handleNextStep}>
@@ -183,27 +199,6 @@ class EventForm extends Component {
 
                 {step === 2 && (
                   <form onSubmit={this.handleNextStep}>
-                    {/* <div className="row1 basicinfo">
-                      <label
-                        htmlFor="description"
-                        className="col-sm-4 col-form-label text-left form-label w-64 borderadjinfo"
-                      >
-                        Description
-                      </label>
-                      <div className="col-md-8 col-12 w-[39.6rem] inputborder">
-                        <input
-                          type="textarea"
-                          className="form-control h-32"
-                          placeholder="Description"
-                          id="description"
-                          name="description"
-                          value={description}
-                          onChange={this.handleChange}
-                          maxLength={200}
-                        />
-                      </div>
-                    </div> */}
-
                     <div className="row1 basicinfo">
                       <label
                         className="col-sm-4 form-label text-left w-64 borderadjinfo"
