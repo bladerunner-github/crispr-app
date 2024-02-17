@@ -41,7 +41,7 @@ const TeamSection = () => {
 
       <div className="row">
         <div className="col-md-12 col-sm-12">
-          <h1 className="heading" align="center"><b>Developer</b></h1>
+          <h1 className="heading1" align="center"><b>Developer</b></h1>
         </div>
       </div>
 

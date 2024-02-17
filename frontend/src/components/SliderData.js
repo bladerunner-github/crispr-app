@@ -1,27 +1,27 @@
- const SliderData = [
-    {
-      image:
-        'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80'
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80'
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'
-    },
-    {
-      image:
-      'https://prog-ace-cdn.azureedge.net/-/media/project/mahindra/dotcom/mahindra/dark-theme-mahindra-images/testz101_optimized/desktop/website-desktop-new-04-may.png?rev=56144f86b1b3409d922f1548fab9c5a6&extension=webp'
-    }
-  ];
-  export default SliderData;
+const SliderData = [
+  {
+    image:
+      "https://images.moneycontrol.com/static-mcnews/2023/06/Healing-Space-107-5-ways-to-use-technology-effectively-for-mental-health-Illustration-by-Suneesh-K-770x433.jpg?impolicy=website&width=770&height=431",
+  },
+  {
+    image:
+      "https://images.yourstory.com/cs/2/70651a302d6d11e9aa979329348d4c3e/Image1ncw-1602755394069.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces",
+  },
+  {
+    image:
+      "https://cdn.pixabay.com/photo/2017/01/30/02/20/mental-health-2019924_640.jpg",
+  },
+  {
+    image:
+      "https://thecurlytherapist.files.wordpress.com/2020/05/copy-of-sana.png",
+  },
+  {
+    image:
+      "https://vertavahealth.com/wp-content/uploads/2021/07/MythsAboutMentalHealth.jpg",
+  },
+  {
+    image:
+      "https://m.economictimes.com/thumb/msid-104306184,width-1600,height-900,resizemode-4,imgsize-27982/mental-health-is-universal-human-right-need-to-destigmatise-mental-health-issues-who.jpg",
+  },
+];
+export default SliderData;
