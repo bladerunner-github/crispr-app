@@ -95,7 +95,7 @@ function Footer()
               <AspectRatio
                 ratio="21/9"
                 minHeight={80}
-                sx={{ flexBasis: { xs: 200, md: 'initial' } }}
+                sx={{ flexBasis: { xs: 200, md: "initial"} }}
               >
                 <img src= {CRISPR_white} alt=""/>
               </AspectRatio>
@@ -109,8 +109,21 @@ function Footer()
               wrap
               sx={{ flexGrow: 0, '--ListItem-radius': '8px' }}
             >
-              <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
-                <ListSubheader>Sitemap</ListSubheader>
+              <ListItem nested sx={{ width: { xs: '50%', md: 160 } }}>
+                <List>
+                  <ListItem>
+                    <ListItemButton><a href="/about-us">About Us</a></ListItemButton>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemButton>Blog</ListItemButton>
+                  </ListItem>
+                  <ListItem>
+                    <ListItemButton>Contact us</ListItemButton>
+                  </ListItem>
+                </List>
+              </ListItem>
+
+              <ListItem nested sx={{ width: { xs: '50%', md: 160 } }}>
                 <List>
                   <ListItem>
                     <ListItemButton>Services</ListItemButton>
@@ -124,8 +137,7 @@ function Footer()
                 </List>
               </ListItem>
 
-              <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
-                <ListSubheader>Sitemap</ListSubheader>
+              <ListItem nested sx={{ width: { xs: '50%', md: 160 } }}>
                 <List>
                   <ListItem>
                     <ListItemButton>Services</ListItemButton>
@@ -139,8 +151,7 @@ function Footer()
                 </List>
               </ListItem>
 
-              <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
-                <ListSubheader>Sitemap</ListSubheader>
+              <ListItem nested sx={{ width: { xs: '50%', md: 160 } }}>
                 <List>
                   <ListItem>
                     <ListItemButton>Services</ListItemButton>
@@ -154,94 +165,6 @@ function Footer()
                 </List>
               </ListItem>
 
-              <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
-                <ListSubheader>Sitemap</ListSubheader>
-                <List>
-                  <ListItem>
-                    <ListItemButton>Services</ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>Blog</ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>Contact us</ListItemButton>
-                  </ListItem>
-                </List>
-              </ListItem>
-
-
-              <ListItem nested sx={{ width: { xs: '50%', md: 180 } }}>
-                <ListSubheader>Product</ListSubheader>
-                <List sx={{ '--ListItemDecorator-size': '32px' }}>
-                  <ListItem>
-                    <ListItemButton>
-                      {/* <ListItemDecorator>
-                        <img
-                          alt=""
-                          src="/static/branding/product-core-dark.svg"
-                          width="24"
-                        />
-                      </ListItemDecorator> */}
-                      MUI Core
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>
-                      {/* <ListItemDecorator>
-                        <img
-                          alt=""
-                          src="/static/branding/product-advanced-dark.svg"
-                          width="24"
-                        />
-                      </ListItemDecorator> */}
-                      MUI X
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>
-                      {/* <ListItemDecorator>
-                        <img
-                          alt=""
-                          src="/static/branding/product-toolpad-dark.svg"
-                          width="24"
-                        />
-                      </ListItemDecorator> */}
-                      MUI Toolpad
-                      {/* <Chip
-                        variant="soft"
-                        size="sm"
-                        sx={{ minHeight: 20, fontSize: 'xs2', ml: 'auto' }}
-                      >
-                        BETA
-                      </Chip> */}
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>
-                      {/* <ListItemDecorator>
-                        <img
-                          alt=""
-                          src="/static/branding/product-designkits-dark.svg"
-                          width="24"
-                        />
-                      </ListItemDecorator> */}
-                      Design kits
-                    </ListItemButton>
-                  </ListItem>
-                  <ListItem>
-                    <ListItemButton>
-                      {/* <ListItemDecorator>
-                        <img
-                          alt=""
-                          src="/static/branding/product-templates-dark.svg"
-                          width="24"
-                        />
-                      </ListItemDecorator> */}
-                      Templates
-                    </ListItemButton>
-                  </ListItem>
-                </List>
-              </ListItem>
               
             </List>
           </Box>

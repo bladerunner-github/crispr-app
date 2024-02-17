@@ -33,7 +33,6 @@ class Navbar extends Component {
               </div>
             </li>
             <li>
-              <Link to="/upcoming-events">Upcoming Events </Link>
               <div onClick={this.handleClick}>
                 <Link to="/Menu">Upcoming Events </Link>
               </div>
