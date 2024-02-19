@@ -1,4 +1,18 @@
- label{
+.buzzer_form{
+width: 60%;
+
+margin: 5rem;
+}
+.buzzer_col{
+margin-top: 3rem;
+}
+
+
+
+
+
+
+/* label{
   font-size: 20px;
  }
 .form_container {
@@ -104,13 +118,13 @@
 }
 .form button:hover {
   background: rgb(88, 56, 250);
-}
+} */
 /*Responsive*/
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .form .column {
     flex-wrap: wrap;
   }
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
   }
-}
+} */
