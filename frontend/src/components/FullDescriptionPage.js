@@ -1,23 +1,18 @@
+// FullDescriptionPage.js
+
 import React from "react";
+import { useLocation } from "react-router-dom";
 
-const FullDescriptionPage = (props) => {
-  // Access the full description and title from the URL parameters
-  const { match, location } = props;
-  const { params } = match;
-  const { title } = params;
+const FullDescriptionPage = () => {
+  // Get the current location and access the state passed from the previous page
+  const location = useLocation();
+  const { about } = location.state;
+  console.log("about description", about);
 
-  // Access the about prop from the location state
-  const { state } = location;
-  const { about } = state || {};
-
-  // Use the title and about to display the full description
-  const fullDescription = about || "No description available.";
-  console.log(fullDescription);
   return (
     <div>
-      <h2>Full Description for {title}</h2>
-      <p>{fullDescription}</p>
-      {/* You can add additional styling or components as needed */}
+      <h2>Full Description</h2>
+      <p>{about}</p>
     </div>
   );
 };

@@ -100,8 +100,8 @@ const UrgentSupport = () => {
             </div>
             {/* End Single Contact Address Box */}
             {/* Single Contact Address Box */}
-            <div className="col-sm-12 col-md-4 single-contact-address-box text-center div1">
-              <table className="mt-1 center">
+            <div className="col-sm-12 col-md-4 single-contact-address-box div1">
+              <table className="lastone mb-2">
                 <tbody>
                   <tr className="mt-4">
                     <td className="text-white text-2xl font-semibold mt-3">

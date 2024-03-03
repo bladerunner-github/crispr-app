@@ -471,7 +471,8 @@ background: #131313;
 }
 .single-contact-address-box table {
     width: 100%;
-    margin-top: 2rem; /* Adjust the margin as needed */
+    /* margin-top: 2rem; */
+     /* Adjust the margin as needed */
     border-spacing: 0;
 }
 
@@ -492,10 +493,18 @@ background: #131313;
  
 .div1{
     animation: slideFromLeft 2s forwards;
+    /* border: 2px solid red; */
 }
 .div2{
     animation: slideFromRight 1s forwards;
 }
+.lastone {
+    /* border: 2px solid blue; */
+    position: relative;
+    /* margin-top: -100px; */
+     /* Adjust the value as needed */
+}
+
 
 @keyframes slideFromLeft {
     from {

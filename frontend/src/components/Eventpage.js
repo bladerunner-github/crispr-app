@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "../styles/Events.css";
 import FullDescriptionPage from "./FullDescriptionPage";
 import { Link } from "react-router-dom";
-
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 class Eventpage extends Component {
   // constructor(props) {
   //   super(props);
@@ -31,6 +32,14 @@ class Eventpage extends Component {
   //     events: [...prevState.events, newEventData],
   //   }));
   // };
+  // constructor(props) {
+  // super(props);
+  // }
+  // handleDescriptionClick = () => {
+  //   const { about } = this.props;
+  //   // Navigate to the description page with the about content as a parameter
+  //   this.props.history.push("/description", { about });
+  // };
   render() {
     // const data = this.props.data
     const hostname = this.props.hostname;
@@ -40,6 +49,18 @@ class Eventpage extends Component {
     const title = this.props.title;
     const location = this.props.location;
     const time = this.props.time;
+
+    const truncateText = (text, limit) => {
+      const words = text.split(" ");
+      if (words.length > limit) {
+        return words.slice(0, limit).join(" ") + "...";
+      }
+      return text;
+    };
+    // const description = () => {
+    //   navigate("/description");
+    // };
+    console.log(about);
     return (
       // third attempt
 
@@ -49,27 +70,29 @@ class Eventpage extends Component {
             <img src={imgURL} alt="Event" />
           </div>
 
-          <div class="body-container">
-            <div class="overlay"></div>
+          <div class="body-container text-left">
+            {/* <div class="overlay"></div> */}
 
             <div class="event-info">
               <p class="title">{title}</p>
-              <div class="separator"></div>
-              <p class="info">IIIT NAGPUR</p>
+              {/* <div class="separator"></div> */}
+              {/* 
+              <p class="info">IIIT NAGPUR</p> */}
               <p class="price">{hostname}</p>
 
               <div class="additional-info">
-                <p class="info">
-                  <i class="fas fa-map-marker-alt"></i>
-                  {location}
-                </p>
-                <p class="info">
-                  <i class="far fa-calendar-alt"></i>
-                  {date}-{time}
-                </p>
+                <div className="info-left">
+                  <p class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    {location}
+                  </p>
+                  <p class="info">
+                    <i class="far fa-calendar-alt"></i>
+                    {date}-{time}
+                  </p>
 
-                <p className="info description">
-                  {about.length > 20 ? `${about.slice(0, 20)}...` : about}{" "}
+                  <p className="info description">
+                    {/* {about.length > 20 ? `${about.slice(0, 20)}...` : about}{" "}
                   <span>
                     <Link
                       to={`/full-description/${title}`}
@@ -77,8 +100,18 @@ class Eventpage extends Component {
                     >
                       more...
                     </Link>
-                  </span>
-                </p>
+                  </span> */}
+                    {truncateText(about, 6)}
+                    <br />
+                    <br />
+                    <Link
+                      to={{ pathname: "/description", state: { about: about } }}
+                      className="custom-btn btn-3 border-2 border-red-800"
+                    >
+                      Read more
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
             {/* <button class="action">Book it</button> */}

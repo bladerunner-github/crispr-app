@@ -17,6 +17,7 @@ body {
   padding: 7rem;
   /* border-radius: 10px; */
   box-shadow: 0 0 20px rgba(32, 30, 65, 0.8);
+ 
   /* border: 2px solid red; */
   display: flex;
   flex-direction: row;

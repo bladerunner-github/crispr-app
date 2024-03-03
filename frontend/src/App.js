@@ -34,6 +34,7 @@ import { AboutUs } from "./pages/AboutUs";
 import AboutUsSnippet from "./components/AboutUsSnippet";
 import Eventpage from "./components/Eventpage";
 import {Link} from "react-router-dom";
+import FullDescriptionPage from "./components/FullDescriptionPage";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/upcoming-events" element={<EventPage/>} />
+        <Route path='/description' element={FullDescriptionPage}/>
 
         <Route
           path="/login"
