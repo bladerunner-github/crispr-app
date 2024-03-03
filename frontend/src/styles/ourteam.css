@@ -8,7 +8,7 @@
 }
 
 .our-team-container {
-  max-width: 100px;
+  max-width: 1200px; /* Increase maximum width for larger screens */
   margin: 0 auto;
   padding: 5em;
 }
@@ -19,19 +19,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-@media (max-width: 600px) {
-  .our-team-container {
-    padding: 3em;
-  }
-  .heading,
-  .heading1 {
-    margin-right: 0;
-  }
-  .faculty-rep {
-    margin: 0.5em 1em;
-  }
 }
 
 .row {
@@ -46,25 +33,17 @@
   padding: 0.5em;
 }
 
-
-.heading {
+.heading,
+.heading1 {
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   color: #ffffff;
-  margin-bottom: 1em;
-  margin-top: 1em;
 }
-.heading1{
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  color: #ffffff;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  
+.heading{
+  margin-left: -0.3em;
+}
 
-}
 .faculty-rep {
   box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
   padding: 1.5em 1.5em;
@@ -74,10 +53,12 @@
   transition: 0.3s;
   background-color: #efe6e6;
   margin: 0.5em;
-  max-width: 290px;
-  max-height: 380px;
+  max-width: 500px;
+  max-height: 450px;
   border: 2px solid #7f28cc;
   background-color: #8582d7;
+  margin-right: 10%;
+  margin-bottom: 25%;
 }
 
 .faculty-rep:hover {
@@ -86,8 +67,8 @@
 }
 
 .faculty-rep .img-container {
-  width: 5em;
-  height: 5em;
+  width: 2em;
+  height: 2em;
   background-color: #a993ff;
   padding: 0.5em;
   border-radius: 50%;
@@ -98,7 +79,7 @@
 }
 
 .faculty-rep img {
-  width: 100%;
+  width: 75%;
   height: 100%;
   object-fit: cover;
   border-radius: 100%;
@@ -125,7 +106,6 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
- 
 }
 
 .faculty-rep a {
@@ -133,8 +113,6 @@
   color: inherit;
   font-size: 1.4em;
 }
-
-
 
 .faculty-rep:hover {
   background: linear-gradient(#6045ea, #8567f7);
@@ -152,8 +130,50 @@
   text-align: center;
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 992px) {
+  .our-team-container {
+    padding: 3em; /* Reduce padding for smaller screens */
+  }
+  .heading,
+  .heading1 {
+    font-size: 3em; /* Reduce font size for headings */
+  }
+  .faculty-rep {
+    max-width: 100%; /* Ensure cards take full width on smaller screens */
+    max-height: none;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+}
 
+/* Responsive styles for even smaller screens like smartphones */
+@media (max-width: 768px) {
+  .our-team-container {
+    padding: 2em; /* Further reduce padding for smaller screens */
+  }
+  .heading,
+  .heading1 {
+    font-size: 2em; /* Further reduce font size for headings */
+  }
+}
 
+/* Responsive styles for iPhone smartphones */
+@media (max-width: 375px) {
+  .our-team-container {
+    padding: 1em; /* Further reduce padding for iPhones */
+  }
+  .heading,
+  .heading1 {
+    font-size: 1.5em; /* Further reduce font size for iPhones */
+  }
+  .faculty-rep {
+    margin-bottom: 1em; /* Reduce margin bottom for iPhones */
+  }
+  .icons {
+    width: 100%; /* Ensure icons take full width on iPhones */
+  }
+}
 
 
 

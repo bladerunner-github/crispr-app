@@ -1,7 +1,7 @@
 
 export const articlelist = [
   {
-    name: "Homesickness in the College Student",
+    name: "Homesickness in the College Student" ,
     author: "-Elena Denton",
     link: "https://medium.com/@elena.denton44/homesickness-in-the-college-student-bf235c012ccb",
    

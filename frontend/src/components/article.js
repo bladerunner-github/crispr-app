@@ -7,17 +7,19 @@ function Articlelist({ name, author, linkTo, image }) {
       <div className="image-container1" style={{ backgroundImage: `url(${image})` }}>
         <div className="image-overlay1">
           <h1 id="apl">{name}</h1>
+          </div>
           <div className="underline">
             <h3 id="ap">{author}</h3>
-            <div className="button-container">
+            </div>
+            <div id="button-container">
               <Link to={linkTo} className="button-link">
                 Go to Page
               </Link>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     
+    
   );
 }
 
