@@ -35,24 +35,27 @@ const UrgentSupport = () => {
                     <td className="text-white text-xl font-semibold mt-3">
                       Kind Of Assistance
                     </td>
-                    <td className="text-white ml-2">Health Emergency</td>
-                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Service</td>
+                    <td className="text-white ml-2">Contact</td>
                   </tr>
                   <tr className="mt-4">
                     <td className="text-white text-xl font-semibold mt-3">
-                      Service
+                      Health Emergency
                     </td>
                     <td className="text-white ml-2">Hospital</td>
-                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">
+                      T: 022-2567051/53 <br /> M: 9920147050
+                    </td>
                   </tr>
                   <tr className="mt-4">
                     <td className="text-white text-xl font-semibold mt-3">
-                      Contact
+                      Quick Response
                     </td>
+                    <td className="text-white ml-2">Security</td>
                     <td className="text-white ml-2">
-                      T: 022-2567051/53 M: 9920147050
+                      Male : 9920141517
+                      <br /> Female :9920141517{" "}
                     </td>
-                    <td className="text-white ml-2">Health Emergency</td>
                   </tr>
                 </tbody>
               </table>
@@ -60,27 +63,30 @@ const UrgentSupport = () => {
             {/* End Single Contact Address Box */}
             {/* Single Contact Address Box */}
             <div className="col-sm-12 col-md-4 single-contact-address-box main-branch div2">
-              <h3>Lorem Ipsum</h3>
-              <div class="inner">
+              <h3>Indian Institute Of Informatin Technology, Nagpur</h3>
+              <div className="inner">
                 <ul>
                   <li>
-                    <div class="title">
+                    <div className="title">
                       <h4>Address:</h4>
                     </div>
-                    <div class="text">
+                    <div className="text">
                       <p>
-                        Lorem Ipsum, 40C, Lorem Ipsum dummy,
-                        <br /> Lorem Ipsum, Ch 98054
+                        Survey No. 140,141/1 behind Br. Sheshrao Wankhade
+                        Shetkari Sahkari Soot Girni, Village - Waranga, PO -
+                        Dongargaon(Butibori),
+                        <br /> Tahsil- Nagpur (Rural), District Nagpur,
+                        Maharashtra- 441108
                       </p>
                     </div>
                   </li>
                   <li>
                     <div class="title">
-                      <h4>Ph & Fax:</h4>
+                      <h4>Ph & Mail</h4>
                     </div>
                     <div class="text">
                       <p>
-                        +123 456 789 <br /> test@info.com
+                        9405215010 <br /> registrar@iiitn.ac.in
                       </p>
                     </div>
                   </li>
@@ -107,24 +113,22 @@ const UrgentSupport = () => {
                     <td className="text-white text-2xl font-semibold mt-3">
                       Kind Of Assistance
                     </td>
-                    <td className="text-white ml-2">Health Emergency</td>
-                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Service</td>
+                    <td className="text-white ml-2">Contact</td>
                   </tr>
                   <tr className="mt-4">
                     <td className="text-white text-2xl font-semibold mt-3">
-                      Service
+                      Crisis
                     </td>
-                    <td className="text-white ml-2">Hospital</td>
-                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Ambulance</td>
+                    <td className="text-white ml-2">T : 101</td>
                   </tr>
                   <tr className="mt-4">
                     <td className="text-white text-2xl font-semibold mt-3">
-                      Contact
+                      Counsellor
                     </td>
-                    <td className="text-white ml-2">
-                      T: 022-2567051/53 M: 9920147050
-                    </td>
-                    <td className="text-white ml-2">Health Emergency</td>
+                    <td className="text-white ml-2">Individual Counselling</td>
+                    <td className="text-white ml-2">M : 9912179020</td>
                   </tr>
                 </tbody>
               </table>

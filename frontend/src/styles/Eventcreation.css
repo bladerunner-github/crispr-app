@@ -9,7 +9,8 @@ body {
 }
 
 .container-fluid {
-  background-color: #101927;
+  /* background-color: #101927; */
+  /* background-color: whitesmoke; */
 }
 
 .main1234 {
@@ -73,7 +74,7 @@ body {
 
 @keyframes glow {
   to {
-      box-shadow: 0 0 20px 10px #241f4b; /* Intense glowing box-shadow */
+      box-shadow: 0 0 20px 10px #241f4b; 
   }
 }
 
@@ -356,7 +357,8 @@ body {
     padding: 2rem; /* Adjust padding for larger screens */
     flex: 1; /* Allow flex item to grow and take available space */
     max-height: 600px; /* Limit max height of forminfodiv */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    /* overflow-y: auto; */
+     /* Enable vertical scrolling if content exceeds max height */
   }
   
   .illustration {

@@ -33,7 +33,7 @@ import Newsletter from "./components/newsletter";
 import { AboutUs } from "./pages/AboutUs";
 import AboutUsSnippet from "./components/AboutUsSnippet";
 import Eventpage from "./components/Eventpage";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import FullDescriptionPage from "./components/FullDescriptionPage";
 // import { useLocation } from "react-router-dom";
 
@@ -87,8 +87,8 @@ function App() {
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/upcoming-events" element={<EventPage/>} />
-        <Route path='/description' element={FullDescriptionPage}/>
+        <Route path="/upcoming-events" element={<EventPage />} />
+        <Route path="/description" element={<FullDescriptionPage />} />
 
         <Route
           path="/login"
@@ -114,7 +114,10 @@ function App() {
       {location.pathname === "/" ? (
         <>
           <ImageSlider slides={SliderData} />
-          <Link to="../Buzzer_Form"> <Buzzer_btn/></Link>
+          <Link to="../Buzzer_Form">
+            {" "}
+            <Buzzer_btn />
+          </Link>
           <Banner />
           <div className="all-blogs">
             <Blog />

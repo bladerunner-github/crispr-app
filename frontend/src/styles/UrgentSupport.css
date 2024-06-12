@@ -214,6 +214,7 @@ height: 5px;
 background: #FFA500;
 border-radius: 50%;
 content: "";
+ /* border:2px solid blue; */
 }
 
 .sec-title-style1 .bottom-text{
@@ -504,7 +505,10 @@ background: #131313;
     /* margin-top: -100px; */
      /* Adjust the value as needed */
 }
-
+.text{
+    /* border: 2px solid red; */
+    margin-left: 1rem;
+}
 
 @keyframes slideFromLeft {
     from {
@@ -966,4 +970,8 @@ background: #131313;
         font-size: 18px;/* Adjust font size as needed */
 }
   /* Add other responsive styles as needed */
+}
+.inner{
+    /* border:2px solid red; */
+    width: max-content;
 }

@@ -359,7 +359,7 @@ class EventForm extends Component {
                           name="description"
                           value={description}
                           onChange={this.handleChange}
-                          maxLength={200}
+                          // maxLength={200}
                         />
                       </div>
                     </div>
